@@ -1,6 +1,6 @@
 # Личный проект «Глейси»
 
-* Студент: [Александра Вишневская](https://up.htmlacademy.ru/htmlcss/21/user/700337).
+* Студент: [Александра ❤ Вишневская](https://up.htmlacademy.ru/htmlcss/21/user/700337).
 * Наставник: [Гоша Егорян](https://htmlacademy.ru/profile/id85633).
 
 ---
