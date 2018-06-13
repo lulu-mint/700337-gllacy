@@ -1,0 +1,178 @@
+body{
+	background-color: #9bafa4;
+}
+/*Ссылки*/
+a{
+	color: #ffffff;
+}
+a:hover{
+	color: #ffbc9e;
+}
+a:active{
+	color: #ffbc9e;
+}
+.button{
+  display: inline-block;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  background: linear-gradient(#f26843, #e74a35);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+.modal a{
+	color: #000000;
+}
+.modal a:hover {
+	color: #e84d37;
+}
+.modal a:active{
+	color: #e84d37;
+}
+
+.main-navigation a{
+	display: inline-block;
+	border-radius: 15px;
+	padding: 5px 10px 5px 10px;
+	color: white;
+	text-align: center;
+	margin: 5px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.main-navigation a:hover{
+	display: inline-block;
+	border-radius: 15px;
+	padding: 5px 10px 5px 10px;
+	background: linear-gradient(#f26843, #e74a35);
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px;
+}
+.main-navigation a:active{
+	display: inline-block;
+	border-radius: 15px;
+	padding: 5px 10px 5px 10px;
+	background: #ffffff;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px;
+}
+.main-navigation a, li{
+  display: inline-block;
+  position: relative;
+}
+.main-navigation li:hover .visually-hiden{
+	visibility: visible;
+	opacity: 1;
+}
+
+.breadcrumbs{
+  opacity: 0.8%;
+}
+.breadcrumbs-current{
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+}
+
+
+
+h1, h2, h3, h4{
+  color: white;
+}
+.visually-hiden{
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  background-color: white;
+}
+
+
+
+.extra-promotion{
+  text-align: center;
+}
+.extra-raspberry{
+  background-image: url(../img/BGmalina.JPG);
+  width: 560px;
+  height: 230px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 13px;
+}
+.extra-chocolate{
+  background-image: url(../img/BGchocolate.JPG);
+  width: 560px;
+  height: 230px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 13px;
+}
+.extra-promotion h3{
+  padding-left: 20px;
+  font-size: 24pt;
+  text-align: left;
+}
+.extra-promotion p{
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  text-align: left;
+  /*just for a while*/
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+
+
+.catalog{
+  font-size: 10pt;
+  text-decoration: underline;
+  text-align: center;
+}
+.catalog-list img{
+  width: 250px;
+  height: 250px;
+  border-radius: 180px;
+}
+.catalog-item{
+  margin: 20px;
+}
+.catalog-item-price{
+  color: white;
+  font-size: 26pt;
+  font-weight: bolder;
+}
+.catalog-item h3{
+  text-decoration: underline;
+}
+
+
+
+
+.about-us{
+  background-image: url(../img/vafle.JPG);
+  width:1200px;
+  height:300px;
+  margin: auto;
+}
+.about-us .bold{
+  font-size: 22pt;
+}
+.about-us div{
+  width: 545px;
+  height: 80px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+
+.pagination-item-curerent{
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+}

@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="css/style.css" rel="stylesheet"></link>
 </head>
 <body>
 
 <header class="main-header">
   <nav class="main-navigation">
-    <a class="main-header-logo">
-      <img src="img/logo.png" alt="Логотип GlacyShop">
+    <a class="main-header-logo"
+       style="pointer-events: none; cursor: default;">
+      <img src="img/logo.svg" alt="Логотип GlacyShop">
     </a>
 
     <ul class="site-navigation">
       <li><a href="catalog.html">Каталог</a>
-        <ul>
+        <ul class="visually-hiden">
           <li><a href="#">Новинки</a></li>
           <li><a href="#">Сливочные</a></li>
           <li><a href="#">Щербеты</a></li>
@@ -26,7 +28,7 @@
       <li><a href="#">О компании</a></li>
     </ul>
     <!-- Где-то тут каким-то образом будет ПОИСК ПО САЙТУ -->
-    <div class="search-onsite">
+    <div class="search-onsite visually-hiden">
       <p>Что ищем?</p>
       <!-- Ваще без идей-->
     </div>
@@ -35,7 +37,7 @@
       <li><a href="#">Вход</a></li>
     </ul>
 
-    <section class="modal modal-login">
+    <section class="modal modal-login visually-hiden">
       <p>Электронная почта</p>
       <p>Пароль</p>
       <a>Забыли пароль?</a>
@@ -48,7 +50,7 @@
       <li><a href="#">Корзина</a></li>
     </ul>
 
-    <section class="modal cart">
+    <section class="modal cart visually-hiden">
       <p>Итогото:</p>
       <a class="button" href="#">Оформить заказ</a>
     </section>
@@ -91,13 +93,14 @@
   <section class="catalog">
     <h2 class="visually-hiden">Список хитовых мороженых</h2>
     <ul class="catalog-list">
+
       <li class="catalog-item">
         <h3>
-          <a class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <a class="catalog-item-title">Сливочное с апельсиновым<br>джемом и цитрусовой стружкой</a>
         </h3>
         <p class="catalog-item-image">
           <a href="#">
-            <img src="img/icecream1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <img src="img/icecream1.JPG" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           </a>
         </p>
         <p class="catalog-item-price">
@@ -107,11 +110,11 @@
 
       <li class="catalog-item">
         <h3>
-          <a class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</a>
+          <a class="catalog-item-title">Сливочно-кофейное с кусочками<br> шоколада</a>
         </h3>
         <p class="catalog-item-image">
           <a href="#">
-            <img src="img/icecream2.png" alt="Сливочно-кофейное с кусочками шоколада">
+            <img src="img/icecream2.JPG" alt="Сливочно-кофейное с кусочками шоколада">
           </a>
         </p>
         <p class="catalog-item-price">
@@ -121,11 +124,11 @@
 
       <li class="catalog-item">
         <h3>
-          <a class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <a class="catalog-item-title">Сливочно-клубничное с<br> присыпкой из белого шоколада</a>
         </h3>
         <p class="catalog-item-image">
           <a href="#">
-            <img src="img/icecream3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <img src="img/icecream3.JPG" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           </a>
         </p>
         <p class="catalog-item-price">
@@ -135,11 +138,11 @@
 
       <li class="catalog-item">
         <h3>
-          <a class="catalog-item-title">Сливочное крем-брюле с карамельной подливкой</a>
+          <a class="catalog-item-title">Сливочное крем-брюле с<br> карамельной подливкой</a>
         </h3>
         <p class="catalog-item-image">
           <a href="#">
-            <img src="img/icecream4.png" alt="Сливочное крем-брюле с карамельной подливкой">
+            <img src="img/icecream4.JPG" alt="Сливочное крем-брюле с карамельной подливкой">
           </a>
         </p>
         <p class="catalog-item-price">
@@ -154,19 +157,19 @@
     <p class="bold">Магазин Глэйси – это онлайн- и офлайн-магазин по продаже мороженного собственного
       производства на развес</p>
     <div>
-      <p>Всё наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
+      <p><img src="img/ice-cream.svg" align="left">Всё наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
         проверенных временем технологий.</p>
     </div>
     <div>
-      <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
+      <p><img src="img/eco.svg" align="left">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
         ингридиенты и добавки произведены из натурального, экологически чистого сырья.</p>
     </div>
     <div>
-      <p>Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает
+      <p><img src="img/cow.svg" align="left">Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает
         долговременное сотрудничество.</p>
     </div>
     <div>
-      <p>Доставка нашего магазина до заказчиков осуществояеися в специальном термопаке, который не дает мороженому
+      <p><img src="img/thermometer.svg" align="left">Доставка нашего магазина до заказчиков осуществояеися в специальном термопаке, который не дает мороженому
         растаять в пути и позволяет сохранить превосходный вкус.</p>
     </div>
   </section>
@@ -202,15 +205,15 @@
 
 <footer>
   <ul class="footer-social">
-    <li><a class="social-button" href="">Twitter</a></li>
-    <li><a class="social-button" href="">Instagram</a></li>
-    <li><a class="social-button" href="">Facebook</a></li>
-    <li><a class="social-button" href="">VK</a></li>
+    <li><a class="social-button" href=""><img src="img/twitter.svg" alt="Twitter"></a></li>
+    <li><a class="social-button" href=""><img src="img/instagram.svg" alt="Instagram"></a></li>
+    <li><a class="social-button" href=""><img src="img/fb.svg" alt="Facebook"></a></li>
+    <li><a class="social-button" href=""><img src="img/VK.svg" alt="VK"></a></li>
   </ul>
 
   <div class="footer-copyright">
     <a class="footer-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/logo-academy.png" alt="Логотип HTML Academy">
+      <img src="img/logo-htmlacademy.svg" width="100px" height="100px" alt="Логотип HTML Academy">
     </a>
     <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2018</p>
   </div>
