@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
-  <link href="css/style.css" rel="stylesheet"></link>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -16,7 +16,7 @@
 
     <ul class="site-navigation">
       <li><a href="catalog.html">Каталог</a>
-        <ul class="visually-hiden">
+        <ul class="visually-hidden">
           <li><a href="#">Новинки</a></li>
           <li><a href="#">Сливочные</a></li>
           <li><a href="#">Щербеты</a></li>
@@ -28,32 +28,40 @@
       <li><a href="#">О компании</a></li>
     </ul>
     <!-- Где-то тут каким-то образом будет ПОИСК ПО САЙТУ -->
-    <div class="search-onsite visually-hiden">
-      <p>Что ищем?</p>
-      <!-- Ваще без идей-->
-    </div>
+    <form name="search-on-site">
+      <input type="text" name="search" placeholder="Что ищем?">
+      <button class="button" type="submit"><img src="img/loupe.svg" alt="Что ищем?"></button>
+    </form>
 
     <ul class="user-navigation">
       <li><a href="#">Вход</a></li>
     </ul>
 
-    <section class="modal modal-login visually-hiden">
-      <p>Электронная почта</p>
-      <p>Пароль</p>
-      <a>Забыли пароль?</a>
-      <a>Новая регистрация</a>
-      <a class="button" href="#">Войти</a>
-      <span class="modal-close">x</span>
-    </section>
+
+    <form class="modal modal-login">
+      <label class="visually-hidden"
+             for="user-login">Электронная почта</label>
+      <input class="login-icon-user" id="user-login" type="text"
+             name="login" placeholder="Электронная почта">
+      <label class="visually-hidden" for="user-password">Пароль</label>
+      <input class="login-icon-password" id="user-password"
+             type="password" name="password" placeholder="Пароль">
+      <a href="#">Забыли пароль?</a>
+      <a href="#">Новая регистрация</a>
+      <button class="button" type="submit">Войти</button>
+    </form>
+
 
     <ul class="cart-navigation">
       <li><a href="#">Корзина</a></li>
     </ul>
 
-    <section class="modal cart visually-hiden">
-      <p>Итогото:</p>
-      <a class="button" href="#">Оформить заказ</a>
-    </section>
+
+    <form class="modal cart">
+      <hr>
+      <p>Итого:</p>
+      <button class="button" type="submit">Оформить заказ</button>
+    </form>
 
     <div class="header-phone-number">
       <p>С 10 до 20, ежедневно<br>
@@ -64,10 +72,10 @@
 
 
 <main>
-  <h1 class="visually-hiden">Магазин мороженого GlacyShop</h1>
+  <h1 class="visually-hidden">Магазин мороженого GlacyShop</h1>
 
   <section class="gallary">
-    <h2 class="visually-hiden">Фотогалерея</h2>
+    <h2 class="visually-hidden">Фотогалерея</h2>
     <figure class="gallary-slider"></figure>
     <span class="gallary-switch">1 фото</span>
     <span class="gallary-switch">2 фото</span>
@@ -76,7 +84,7 @@
   </section>
 
   <section class="extra-promotion">
-    <h2 class="visually-hiden">Дополнительные предложения</h2>
+    <h2 class="visually-hidden">Дополнительные предложения</h2>
     <div class="extra-raspberry">
       <h3>Малинка даром!</h3>
       <p>При покупке 2 кг любого фруктового мороженого, добавим в Ваш заказ банку малинового варенья бесплатно.</p>
@@ -91,16 +99,16 @@
   </section>
 
   <section class="catalog">
-    <h2 class="visually-hiden">Список хитовых мороженых</h2>
+    <h2 class="visually-hidden">Список хитовых мороженых</h2>
     <ul class="catalog-list">
 
       <li class="catalog-item">
         <h3>
-          <a class="catalog-item-title">Сливочное с апельсиновым<br>джемом и цитрусовой стружкой</a>
+          <a class="catalog-item-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </h3>
         <p class="catalog-item-image">
           <a href="#">
-            <img src="img/icecream1.JPG" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <img src="img/icecream1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           </a>
         </p>
         <p class="catalog-item-price">
@@ -110,11 +118,11 @@
 
       <li class="catalog-item">
         <h3>
-          <a class="catalog-item-title">Сливочно-кофейное с кусочками<br> шоколада</a>
+          <a class="catalog-item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
         </h3>
         <p class="catalog-item-image">
           <a href="#">
-            <img src="img/icecream2.JPG" alt="Сливочно-кофейное с кусочками шоколада">
+            <img src="img/icecream2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
           </a>
         </p>
         <p class="catalog-item-price">
@@ -124,11 +132,11 @@
 
       <li class="catalog-item">
         <h3>
-          <a class="catalog-item-title">Сливочно-клубничное с<br> присыпкой из белого шоколада</a>
+          <a class="catalog-item-title"href="#">Сливочно-клубничное с рисыпкой из белого шоколада</a>
         </h3>
         <p class="catalog-item-image">
           <a href="#">
-            <img src="img/icecream3.JPG" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <img src="img/icecream3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           </a>
         </p>
         <p class="catalog-item-price">
@@ -138,11 +146,11 @@
 
       <li class="catalog-item">
         <h3>
-          <a class="catalog-item-title">Сливочное крем-брюле с<br> карамельной подливкой</a>
+          <a class="catalog-item-title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
         </h3>
         <p class="catalog-item-image">
           <a href="#">
-            <img src="img/icecream4.JPG" alt="Сливочное крем-брюле с карамельной подливкой">
+            <img src="img/icecream4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
           </a>
         </p>
         <p class="catalog-item-price">
@@ -153,23 +161,23 @@
   </section>
 
   <section class="about-us">
-    <h2 class="visually-hiden">О нас</h2>
+    <h2 class="visually-hidden">О нас</h2>
     <p class="bold">Магазин Глэйси – это онлайн- и офлайн-магазин по продаже мороженного собственного
       производства на развес</p>
     <div>
-      <p><img src="img/ice-cream.svg" align="left">Всё наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
+      <p><img src="img/ice-cream.svg" alt="Мороженое">Всё наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
         проверенных временем технологий.</p>
     </div>
     <div>
-      <p><img src="img/eco.svg" align="left">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
+      <p><img src="img/eco.svg" alt="Листик">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
         ингридиенты и добавки произведены из натурального, экологически чистого сырья.</p>
     </div>
     <div>
-      <p><img src="img/cow.svg" align="left">Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает
+      <p><img src="img/cow.svg" alt="Коровка">Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает
         долговременное сотрудничество.</p>
     </div>
     <div>
-      <p><img src="img/thermometer.svg" align="left">Доставка нашего магазина до заказчиков осуществояеися в специальном термопаке, который не дает мороженому
+      <p><img src="img/thermometer.svg" alt="Термометр">Доставка нашего магазина до заказчиков осуществояеися в специальном термопаке, который не дает мороженому
         растаять в пути и позволяет сохранить превосходный вкус.</p>
     </div>
   </section>
@@ -181,18 +189,19 @@
   </article>
 
   <section class="subscribe">
-    <h2 class="visually-hiden">Подписка на рассылку новостей</h2>
+    <h2 class="visually-hidden">Подписка на рассылку новостей</h2>
     <p>Подпишись на нашу сладкую рассылку и блаблабла...</p>
     <span>Электронная почта</span>
     <a class="button" href="#">Отправить</a>
   </section>
 
   <section class="modal-map">
-    <h2 class="visually-hiden">Где находимся</h2>
+    <h2 class="visually-hidden">Где мы находимся</h2>
+    <p><img src="img/map.jpg" alt="Адрес магазина Глэйси"></p>
   </section>
 
   <section class="address">
-    <h2 class="visually-hiden">Адрес магазина Глэйси</h2>
+    <h2 class="visually-hidden">Адрес магазина Глэйси</h2>
     <p>Адрес главного офиса и офлайн-магазина:<br>
       <strong>ул.Большая Конюшенная 19/8, Санкт-Петербург</strong></p>
     <p>Для заказов по телефону:<br>
