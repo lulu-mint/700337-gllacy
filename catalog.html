@@ -82,6 +82,22 @@
   <section class="filters">
     <h2 class="visually-hidden">Фильтрация товаров</h2>
 
+    <label>
+      Сортировка:
+      <input list="sort-by">
+    </label>
+    <datalist id="sort-by">
+      <option value="по популярности">
+      <option value="сначала недорогие">
+      <option value="сначала дорогие">
+      <option value="по жирности">
+
+    </datalist>
+
+    <label>
+      <input type="range" name="cost">Цена:
+    </label>
+
     <fieldset>
       <legend>Жирность</legend>
       <ul>
@@ -150,6 +166,8 @@
 
       </ul>
     </fieldset>
+
+    <button type="submit">Применить</button>
   </section>
 
 
