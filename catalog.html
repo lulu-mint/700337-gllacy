@@ -13,8 +13,8 @@
       <img src="img/logo.svg" alt="Логотип GlacyShop">
     </a>
     <ul class="site-navigation">
-      <li><a href="#" class="site-navigation-current">Каталог</a> <!-- LOOK AT ME!-->
-        <ul class="visually-hidden">
+      <li><a href="#" class="site-navigation-current">Каталог</a>
+        <ul class="visually-hidden"> <!-- Нужно другое название класса, чтоб редачить внешний вид-->
           <li><a href="#">Новинки</a></li>
           <li><a class="site-navigation-current">Сливочные</a></li>
           <li><a href="#">Щербеты</a></li>
@@ -25,7 +25,8 @@
       <li><a href="#">Доставка и оплата</a></li>
       <li><a href="#">О компании</a></li>
     </ul>
-    <!-- Где-то тут каким-то образом будет ПОИСК ПО САЙТУ -->
+
+
     <form name="search-on-site">
       <input type="text" name="search" placeholder="Что ищем?">
       <button class="button" type="submit">
@@ -71,6 +72,7 @@
   </nav>
 </header>
 
+
 <main>
   <h1>Сливочное мороженое</h1>
   <ul class="breadcrumbs">
@@ -83,15 +85,13 @@
     <h2 class="visually-hidden">Фильтрация товаров</h2>
 
     <label>
-      Сортировка:
-      <input list="sort-by">
+      Сортировка:<input list="sort-by">
     </label>
     <datalist id="sort-by">
       <option value="по популярности">
       <option value="сначала недорогие">
       <option value="сначала дорогие">
       <option value="по жирности">
-
     </datalist>
 
     <label>

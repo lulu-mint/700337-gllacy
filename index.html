@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=
+  Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -16,7 +19,7 @@
 
     <ul class="site-navigation">
       <li><a href="catalog.html">Каталог</a>
-        <ul class="visually-hidden">
+        <ul class="visually-hidden"> <!-- Нужно другое название класса, чтоб редачить внешний вид-->
           <li><a href="#">Новинки</a></li>
           <li><a href="#">Сливочные</a></li>
           <li><a href="#">Щербеты</a></li>
@@ -40,7 +43,7 @@
 
     <form class="modal modal-login">
       <label class="visually-hidden"
-             for="user-login">Электронная почта</label>
+             for="user-login">Электронная почта</label>  <!-- зачем нужны icon? можно ли их убрать? -->
       <input class="login-icon-user" id="user-login" type="text"
              name="login" placeholder="Электронная почта">
       <label class="visually-hidden" for="user-password">Пароль</label>
@@ -74,12 +77,12 @@
 <main>
   <h1 class="visually-hidden">Магазин мороженого GlacyShop</h1>
 
-  <section class="gallary">
+  <section class="gallery">
     <h2 class="visually-hidden">Фотогалерея</h2>
-    <figure class="gallary-slider"></figure>
-    <span class="gallary-switch">1 фото</span>
-    <span class="gallary-switch">2 фото</span>
-    <span class="gallary-switch">3 фото</span>
+    <figure class="gallery-slider"></figure>
+    <button>1 фото</button> <!-- class="button" or "submit"? -->
+    <button>2 фото</button>
+    <button>3 фото</button>
     <a class="button" href="#">Давайте оба!</a>
   </section>
 
@@ -182,7 +185,7 @@
     <span>Электронная почта</span>
     <a class="button" href="#">Отправить</a>
   </section>
-
+  <!-- НЕ ЗАБЫТЬ ДОБАВИТЬ ФОРМУ ОБРАТНОЙ СВЯЗИ! -->
   <section class="modal-map">
     <h2 class="visually-hidden">Где мы находимся</h2>
     <p><img src="img/map.jpg" alt="Адрес магазина Глэйси"></p>

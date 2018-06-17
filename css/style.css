@@ -1,0 +1,102 @@
+body{
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  color: white;
+
+  background-color: #849d8f;
+  background-image: url("../img/bg-green.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  color: white;
+}
+a:hover, a:active{
+  color:#ffbc9e;
+}
+
+/*.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}*/
+
+.main-navigation{
+  font-size: 16px;
+  color: white;
+}
+
+.main-navigation li {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a,
+.cart-navigation a{
+  color: white;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover,
+.cart-navigation a:hover{
+  border-radius: 15px;
+  padding: 5px 10px;
+  background: #f7f6f3;
+  color: black;
+  text-decoration: none;
+}
+
+.modal a{
+  color: black;
+}
+
+.modal a:hover,
+.modal a:active{
+  color:#ffbc9e;
+}
+
+.extra-raspberry{
+  width: 560px;
+  height: 230px;
+  border-radius: 20px;
+  background-image: url("../img/bg-raspberry.jpg");
+  background-repeat: no-repeat;
+}
+
+.extra-chocolate{
+  width: 560px;
+  height: 230px;
+  border-radius: 20px;
+  background-image: url("../img/bg-chocolate.jpg");
+  background-repeat: no-repeat;
+}
+
+.extra-promotion h3{
+  font-size: 35px;
+}
+.extra-promotion p{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.about-us{
+  width: 1150px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #eaddbf;
+  background-image: url("../img/vafle.jpg");
+}
+
+.about-us p{
+  color: black;
+}
+
+.about-us h3{
+  color: black;
+}
