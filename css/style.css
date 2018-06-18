@@ -87,7 +87,7 @@ a:hover, a:active{
 
 .about-us{
   width: 1150px;
-  height: 300px;
+
   border-radius: 20px;
   background-color: #eaddbf;
   background-image: url("../img/vafle.jpg");
@@ -97,6 +97,8 @@ a:hover, a:active{
   color: black;
 }
 
-.about-us h3{
+.bold {
   color: black;
+  font-weight: bold;
+  font-size: 26px;
 }

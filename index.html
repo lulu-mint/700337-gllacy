@@ -19,7 +19,7 @@
 
     <ul class="site-navigation">
       <li><a href="catalog.html">Каталог</a>
-        <ul class="visually-hidden"> <!-- Нужно другое название класса, чтоб редачить внешний вид-->
+        <ul class="sub-menu">
           <li><a href="#">Новинки</a></li>
           <li><a href="#">Сливочные</a></li>
           <li><a href="#">Щербеты</a></li>
@@ -43,11 +43,11 @@
 
     <form class="modal modal-login">
       <label class="visually-hidden"
-             for="user-login">Электронная почта</label>  <!-- зачем нужны icon? можно ли их убрать? -->
-      <input class="login-icon-user" id="user-login" type="text"
+             for="user-login">Электронная почта</label>
+      <input class="login-user" id="user-login" type="text"
              name="login" placeholder="Электронная почта">
       <label class="visually-hidden" for="user-password">Пароль</label>
-      <input class="login-icon-password" id="user-password"
+      <input class="login-password" id="user-password"
              type="password" name="password" placeholder="Пароль">
       <a href="#">Забыли пароль?</a>
       <a href="#">Новая регистрация</a>
@@ -80,9 +80,9 @@
   <section class="gallery">
     <h2 class="visually-hidden">Фотогалерея</h2>
     <figure class="gallery-slider"></figure>
-    <button>1 фото</button> <!-- class="button" or "submit"? -->
-    <button>2 фото</button>
-    <button>3 фото</button>
+    <button type="button">1 фото</button> <!-- class="button" or "submit"? -->
+    <button type="button">2 фото</button>
+    <button type="button">3 фото</button>
     <a class="button" href="#">Давайте оба!</a>
   </section>
 
