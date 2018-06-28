@@ -31,7 +31,7 @@
       <li><a href="#">Доставка и оплата</a></li>
       <li><a href="#">О компании</a></li>
     </ul>
-    <!-- Где-то тут каким-то образом будет ПОИСК ПО САЙТУ -->
+
     <form name="search-on-site">
       <input type="text" name="search" placeholder="Что ищем?">
       <button class="button" type="submit"><img src="img/loupe.svg" alt="Что ищем?"></button>
@@ -81,7 +81,7 @@
   <section class="gallery">
     <h2 class="visually-hidden">Фотогалерея</h2>
     <figure class="gallery-slider"></figure>
-    <button type="button">1 фото</button> <!-- class="button" or "submit"? -->
+    <button type="button">1 фото</button>
     <button type="button">2 фото</button>
     <button type="button">3 фото</button>
     <a class="button" href="#">Давайте оба!</a>
@@ -199,8 +199,17 @@
     <p>Для заказов по телефону:<br>
       <strong>8 812 450-25-25</strong><br>
       (с 10 до 20 ежедневно)</p>
-    <a class="button" href="#">Форма обратной связи</a>
+    <button class="button" type="button">Форма обратной связи</button>
   </section>
+
+  <form class="modal feedback">
+    <label class="visually-hidden" for="user-name">Ваше имя</label>
+    <input id="user-name" type="text" name="user-name" placeholder="Как Вас зовут?">
+    <label class="visually-hidden" for="user-email">Ваша почта для ответа</label>
+    <input id="user-email" type="text" name="user-email" placeholder="Ваша почта для ответа?">
+    <textarea rows="10" cols="45" name="text" placeholder="Напишите что-нибудь..."></textarea>
+    <button class="button" type="submit">Отправить</button>
+  </form>
 </main>
 
 
