@@ -134,22 +134,40 @@ a:hover, a:active {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.about-us {
+.features {
   width: 1150px;
-
+margin-bottom: 40px;
   border-radius: 20px;
   background-color: #eaddbf;
   background-image: url("../img/vafle.jpg");
+  color: #323232;
+}
+.features img{
+  float: left;
+  margin-right: 10px;
+  margin-top: -15px;
+}
+.feature-list{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*margin-left: -15px;*/
+}
+.feature-list li{
+  width:540px;
+  min-width: 400px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 25px;
 }
 
-.about-us p {
-  color: black;
-}
-
-.bold {
-  color: black;
+.features p{
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
+  line-height: 30px;
+  padding-left: 25px;
 }
 
 .catalog-list img {
@@ -272,9 +290,25 @@ a:hover, a:active {
 .subscribe{
   width: 560px;
   height: 220px;
+  background-color: #f7f6f3;
+  background-image: url("../img/post-card-bg.svg");
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cover{
+  width: 550px;
+  height: 210px;
   background-color: #f8f7f4;
   color: black;
   border-radius: 15px;
+  padding: 25px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 22px;
+  color: #5a5a5a;
+  font-weight: normal;
 }
 .main-footer{
   display: flex;
@@ -286,6 +320,7 @@ a:hover, a:active {
   justify-content: space-between;
   min-width: 850px;
   width: 1150px;
+  margin-bottom: 40px;
 }
 
 .address{
@@ -299,12 +334,21 @@ a:hover, a:active {
   margin-left: -25px;
 
 }
+.address p{
+  color: #323232;
+  font-size: 14px;
+  line-height: 20px;
+}
+.address strong{
+  font-size: 18px;
+  line-height: 24px;
+}
 .info-address{
   background-color: #fefefe;
   color: black;
   width: 300px;
   height: 300px;
-  padding: 20px;
+  padding: 25px;
   box-sizing: border-box;
   border-radius: 15px;
   margin-right: 25px;
@@ -349,4 +393,28 @@ a:hover, a:active {
   font: inherit;
   color: whitesmoke;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.about-us{
+  display: flex;
+  justify-content: space-around;
+}
+.about-us div{
+width: 540px;
+}
+.blog-news{
+  padding: 20px;
+  box-sizing: border-box;
+}
+.blog-news h2{
+  font-size: 16px;
+  color:black;
+  line-height: 22px;
+  font-weight: normal;
+}
+.article-head{
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+border-bottom: 2px solid black;
 }
