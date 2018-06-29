@@ -32,8 +32,10 @@ a:hover, a:active {
   overflow: hidden;
 }
 
-.main-navigation {
+.main-navigation a {
   font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
   color: white;
 }
 
@@ -45,6 +47,9 @@ a:hover, a:active {
 .user-navigation a,
 .cart-navigation a {
   color: white;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -57,6 +62,41 @@ a:hover, a:active {
   background: #f7f6f3;
   color: black;
   text-decoration: none;
+}
+.site-navigation,
+.user-navigation {
+  margin: 0px;
+  padding: 0px;
+
+  list-style: none;
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 390px;
+}
+
+.user-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  max-width: 260px;
+  flex-wrap: wrap;
+}
+
+.site-navigation li {
+  padding: 0px;
+  margin:0px;
+  margin-right: 25px;
+}
+
+.user-navigation li {
+  padding: 0px;
+  margin:0px;
+  padding-left: 10px;
 }
 
 .sub-menu {
@@ -101,6 +141,7 @@ a:hover, a:active {
   height: 230px;
   border-radius: 20px;
   background-image: url("../img/bg-raspberry.jpg");
+  background-color: #a0203c;
   background-repeat: no-repeat;
 }
 
@@ -109,6 +150,7 @@ a:hover, a:active {
   height: 230px;
   border-radius: 20px;
   background-image: url("../img/bg-chocolate.jpg");
+  background-color: #3f2417;
   background-repeat: no-repeat;
 }
 
@@ -136,34 +178,40 @@ a:hover, a:active {
 
 .features {
   width: 1150px;
-margin-bottom: 40px;
+  margin-bottom: 40px;
   border-radius: 20px;
   background-color: #eaddbf;
   background-image: url("../img/vafle.jpg");
   color: #323232;
 }
-.features img{
+
+.features img {
   float: left;
   margin-right: 10px;
   margin-top: -15px;
 }
-.feature-list{
+
+.feature-list {
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   /*margin-left: -15px;*/
+  padding: 0px;
+  margin:0px;
 }
-.feature-list li{
-  width:540px;
+
+.feature-list li {
+
+  width: 540px;
   min-width: 400px;
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 25px;
 }
 
-.features p{
+.features p {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -180,14 +228,19 @@ margin-bottom: 40px;
 
 .button {
   display: inline-block;
-  border: none;
-  border-radius: 15px;
-  padding: 5px 10px;
+  margin-right: 16px;
+
+  border-radius: 25px;
+  padding: 15px 20px;
   background: linear-gradient(#f26843, #e74a35);
   color: white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
   text-align: center;
   text-decoration: none;
   margin: 5px;
+  border: none;
 }
 
 /* Пятница: сетка */
@@ -217,27 +270,13 @@ margin-bottom: 40px;
   min-width: 695px;
   width: 995px;
   margin: auto;
-  padding: 0px 25px;
+padding-left: 20px;
   justify-content: space-between;
 
   border: 2px solid red;
 }
 
-.site-navigation,
-.user-navigation {
-  margin: 0px;
-  padding: 0px;
 
-  list-style: none;
-}
-
-.site-navigation {
-  width: 535px;
-}
-
-.user-navigation {
-  width: 245px;
-}
 
 .main-content {
   min-width: 850px;
@@ -274,20 +313,23 @@ margin-bottom: 40px;
   display: flex;
   flex-direction: row;
 }
-.catalog-item{
+
+.catalog-item {
   margin-right: 25px;
 }
-.catalog-item:last-child{
+
+.catalog-item:last-child {
   margin-right: 0px;
 }
 
-.blog-news{
+.blog-news {
   width: 560px;
   height: 220px;
   background: url("../img/bg-strawberry.JPG") no-repeat;
   border-radius: 15px;
 }
-.subscribe{
+
+.subscribe {
   width: 560px;
   height: 220px;
   background-color: #f7f6f3;
@@ -297,7 +339,8 @@ margin-bottom: 40px;
   justify-content: center;
   align-items: center;
 }
-.cover{
+
+.cover {
   width: 550px;
   height: 210px;
   background-color: #f8f7f4;
@@ -310,12 +353,14 @@ margin-bottom: 40px;
   color: #5a5a5a;
   font-weight: normal;
 }
-.main-footer{
+
+.main-footer {
   display: flex;
   justify-content: center;
   height: 100px;
 }
-.content{
+
+.content {
   display: flex;
   justify-content: space-between;
   min-width: 850px;
@@ -323,7 +368,7 @@ margin-bottom: 40px;
   margin-bottom: 40px;
 }
 
-.address{
+.address {
   background: url("../img/map.jpg");
   display: flex;
   flex-direction: row;
@@ -334,27 +379,33 @@ margin-bottom: 40px;
   margin-left: -25px;
 
 }
-.address p{
+
+.address p {
+  margin: 0px;
   color: #323232;
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 25px;
 }
-.address strong{
+
+.address strong {
   font-size: 18px;
   line-height: 24px;
 }
-.info-address{
+
+.info-address {
   background-color: #fefefe;
   color: black;
-  width: 300px;
+  width: 305px;
   height: 300px;
-  padding: 25px;
+  padding: 24px;
   box-sizing: border-box;
   border-radius: 15px;
   margin-right: 25px;
   align-self: center;
 }
-.footer-social{
+
+.footer-social {
   width: 190px;
   list-style: none;
   display: flex;
@@ -362,26 +413,30 @@ margin-bottom: 40px;
   justify-content: space-between;
   align-items: center;
 }
-.footer-info{
+
+.footer-info {
   width: 350px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.footer-info ul{
+
+.footer-info ul {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
-.footer-info a{
-  color:white;
+
+.footer-info a {
+  color: white;
   text-decoration: none;
   font: inherit;
   font-size: 13px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
 }
-.footer-copyright{
+
+.footer-copyright {
   width: 190px;
   height: 60px;
   text-decoration: none;
@@ -389,32 +444,38 @@ margin-bottom: 40px;
   color: whitesmoke;
   align-items: center;
 }
-.footer-copyright .underline{
+
+.footer-copyright .underline {
   font: inherit;
   color: whitesmoke;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-.about-us{
+
+.about-us {
   display: flex;
   justify-content: space-around;
 }
-.about-us div{
-width: 540px;
+
+.about-us div {
+  width: 540px;
 }
-.blog-news{
+
+.blog-news {
   padding: 20px;
   box-sizing: border-box;
 }
-.blog-news h2{
+
+.blog-news h2 {
   font-size: 16px;
-  color:black;
+  color: black;
   line-height: 22px;
   font-weight: normal;
 }
-.article-head{
+
+.article-head {
   color: black;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-border-bottom: 2px solid black;
+  border-bottom: 2px solid black;
 }
