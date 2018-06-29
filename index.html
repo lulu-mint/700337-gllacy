@@ -12,92 +12,114 @@
 
 <header class="main-header">
   <nav class="main-navigation">
+
     <a class="main-header-logo"
        style="pointer-events: none; cursor: default;">
       <!-- ИМХО: Некликабельно ТОЛЬКО для главной,
        создавать еще один класс на один раз нецелесообразно. -->
-      <img src="img/logo.svg" alt="Логотип GlacyShop">
-    </a>
+      <img src="img/logo.svg" alt="Логотип GlacyShop"></a>
+    <div class="container">
+      <ul class="site-navigation">
+        <li><a href="catalog.html">Каталог</a>
+          <ul class="sub-menu visually-hidden">
+            <li><a href="#">Новинки</a></li>
+            <hr>
+            <li><a href="#">Сливочные</a></li>
+            <li><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лёд</a></li>
+            <li><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">О компании</a></li>
+      </ul>
 
-    <ul class="site-navigation">
-      <li><a href="catalog.html">Каталог</a>
-        <ul class="sub-menu">
-          <li><a href="#">Новинки</a></li>
-          <hr>
-          <li><a href="#">Сливочные</a></li>
-          <li><a href="#">Щербеты</a></li>
-          <li><a href="#">Фруктовый лёд</a></li>
-          <li><a href="#">Мелорин</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Доставка и оплата</a></li>
-      <li><a href="#">О компании</a></li>
-    </ul>
+      <ul class="user-navigation">
 
-    <ul class="search-on-site">
-      <li>
-        <button class="menu-button" type="button">
-          <img src="img/loupe.svg" alt="Что ищем?"></button> <!-- поменять .svg -->
-      </li>
-    </ul>
-    <div class="visually-hidden">
-    <form name="search-on-site">
-      <input type="text" name="search" placeholder="Что ищем?">
-      <button class="button" type="submit"><img src="img/loupe.svg" alt="Что ищем?"></button> <!-- поменять .svg -->
-    </form>
-    </div>
+        <li class="search-on-site">
+          <button class="menu-button" type="button">
+            <img src="img/loupe.svg" alt="Что ищем?"></button> <!-- поменять .svg -->
+        </li>
+        <div class="visually-hidden">
+          <form name="search-on-site">
+            <input type="text" name="search" placeholder="Что ищем?">
+            <button class="button" type="submit"><img src="img/loupe.svg" alt="Что ищем?"></button>
+            <!-- поменять .svg -->
+          </form>
+        </div>
 
-    <ul class="user-navigation">
-      <li><button class="menu-button" type="button">
-        <img src="img/entrance.svg" alt="Вход">Вход</button></li> <!-- поменять .svg -->
-    </ul>
-    <div class="visually-hidden">
-    <form class="modal modal-login">
-      <label class="visually-hidden"
-             for="user-login">Электронная почта</label>
-      <input class="login-user" id="user-login" type="text"
-             name="login" placeholder="Электронная почта">
-      <label class="visually-hidden" for="user-password">Пароль</label>
-      <input class="login-password" id="user-password"
-             type="password" name="password" placeholder="Пароль">
-      <a href="#">Забыли пароль?</a>
-      <a href="#">Новая регистрация</a>
-      <button class="button" type="submit">Войти</button>
-    </form>
-    </div>
+        <li class="login">
+          <button class="menu-button" type="button">
+            <img src="img/entrance.svg" alt="Вход">Вход
+          </button>
+        </li> <!-- поменять .svg -->
+        <div class="visually-hidden">
+          <form class="modal modal-login">
+            <label class="visually-hidden"
+                   for="user-login">Электронная почта</label>
+            <input class="login-user" id="user-login" type="text"
+                   name="login" placeholder="Электронная почта">
+            <label class="visually-hidden" for="user-password">Пароль</label>
+            <input class="login-password" id="user-password"
+                   type="password" name="password" placeholder="Пароль">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+            <button class="button" type="submit">Войти</button>
+          </form>
+        </div>
 
+        <li class="cart-navigation">
+          <button class="menu-button" type="button">
+            <img src="img/cart-white.svg" alt="Корзина">Корзина
+          </button>
+        </li> <!-- поменять .svg -->
+        <div class="visually-hidden">
+          <form class="modal cart">
+            <hr>
+            <p>Итого:</p>
+            <button class="button" type="submit">Оформить заказ</button>
+          </form>
+        </div>
+      </ul>
 
-    <ul class="cart-navigation">
-      <li><button class="menu-button" type="button">
-        <img src="img/cart-white.svg" alt="Корзина">Корзина</button></li> <!-- поменять .svg -->
-    </ul>
-    <div class="visually-hidden">
-    <form class="modal cart">
-      <hr>
-      <p>Итого:</p>
-      <button class="button" type="submit">Оформить заказ</button>
-    </form>
-    </div>
+      <!-- <div class="header-phone-number">
+        <p>С 10 до 20, ежедневно<br>
+          <strong>8 812 450-25-25</strong></p>
+      </div> -->
 
-    <div class="header-phone-number">
-      <p>С 10 до 20, ежедневно<br>
-        <strong>8 812 450-25-25</strong></p>
     </div>
   </nav>
 </header>
 
 
-<main>
+<main class="main-content">
   <h1 class="visually-hidden">Магазин мороженого GlacyShop</h1>
 
+  <!--
   <section class="gallery">
     <h2 class="visually-hidden">Фотогалерея</h2>
-    <figure class="gallery-slider"></figure>
-    <button type="button">1 фото</button>
-    <button type="button">2 фото</button>
-    <button type="button">3 фото</button>
+    <figure class="gallery-content">
+      <img src="img/slider1.png">
+    </figure>
+    <button class="gallery-button" type="button">1 фото</button>
+    <button class="gallery-button" type="button">2 фото</button>
+    <button class="gallery-button" type="button">3 фото</button>
     <a class="button" href="#">Давайте оба!</a>
   </section>
+-->
+
+  <div class="gallery">
+    <div class="gallery-button">
+      <button class="gallery-button" type="button">1 фото</button>
+      <button class="gallery-button" type="button">2 фото</button>
+      <button class="gallery-button" type="button">3 фото</button>
+    </div>
+    <a class="button" href="#">Давайте оба!</a>
+    <div class="header-phone-number">
+      <p>С 10 до 20, ежедневно<br>
+        <strong>8 812 450-25-25</strong></p>
+    </div>
+  </div>
 
   <section class="extra-promotion">
     <h2 class="visually-hidden">Дополнительные предложения</h2>
@@ -184,35 +206,42 @@
     </div>
   </section>
 
-  <article>
-    <h2>Новое в нашем блоге</h2>
-    <p class="article-head"><a href="#">10 способов сервировки фруктовых щербетов к
-      столу</a></p>
-  </article>
+  <div class="content">
+    <article class="blog-news">
+      <h2>Новое в нашем блоге</h2>
+      <p class="article-head"><a href="#">10 способов сервировки фруктовых щербетов к
+        столу</a></p>
+    </article>
 
-  <section class="subscribe">
-    <h2 class="visually-hidden">Подписка на рассылку новостей</h2>
-    <p>Подпишись на нашу сладкую рассылку и блаблабла...</p>
-    <span>Электронная почта</span>
-    <a class="button" href="#">Отправить</a>
-  </section>
-  <!-- НЕ ЗАБЫТЬ ДОБАВИТЬ ФОРМУ ОБРАТНОЙ СВЯЗИ! -->
-  <section class="modal-map">
+    <section class="subscribe">
+      <h2 class="visually-hidden">Подписка на рассылку новостей</h2>
+      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
+        что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+      <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
+      <input id="subscribe-email" type="text" name="subscribe-email" placeholder="Электронная почта">
+      <a class="button" href="#">Отправить</a>
+    </section>
+  </div>
+
+  <!-- <section class="modal-map">
     <h2 class="visually-hidden">Где мы находимся</h2>
     <p><img src="img/map.jpg" alt="Адрес магазина Глэйси"></p>
-  </section>
+  </section> -->
 
   <section class="address">
-    <h2 class="visually-hidden">Адрес магазина Глэйси</h2>
-    <p>Адрес главного офиса и офлайн-магазина:<br>
-      <strong>ул.Большая Конюшенная 19/8, Санкт-Петербург</strong></p>
-    <p>Для заказов по телефону:<br>
-      <strong>8 812 450-25-25</strong><br>
-      (с 10 до 20 ежедневно)</p>
-    <button class="button" type="button">Форма обратной связи</button>
+    <div class="info-address">
+      <h2 class="visually-hidden">Адрес магазина Глэйси</h2>
+      <p>Адрес главного офиса и офлайн-магазина:<br>
+        <strong>ул.Большая Конюшенная 19/8, Санкт-Петербург</strong></p>
+      <p>Для заказов по телефону:<br>
+        <strong>8 812 450-25-25</strong><br>
+        (с 10 до 20 ежедневно)</p>
+      <button class="button" type="button">Форма обратной связи</button>
+    </div>
   </section>
 
-  <form class="modal feedback">
+
+  <form class="modal feedback visually-hidden">
     <label class="visually-hidden" for="user-name">Ваше имя</label>
     <input id="user-name" type="text" name="user-name" placeholder="Как Вас зовут?">
     <label class="visually-hidden" for="user-email">Ваша почта для ответа</label>
@@ -220,22 +249,39 @@
     <textarea rows="10" cols="45" name="text" placeholder="Напишите что-нибудь..."></textarea>
     <button class="button" type="submit">Отправить</button>
   </form>
+
 </main>
 
 
-<footer>
-  <ul class="footer-social">
-    <li><a class="social-button" href=""><img src="img/twitter.svg" alt="Twitter"></a></li>
-    <li><a class="social-button" href=""><img src="img/instagram.svg" alt="Instagram"></a></li>
-    <li><a class="social-button" href=""><img src="img/fb.svg" alt="Facebook"></a></li>
-    <li><a class="social-button" href=""><img src="img/VK.svg" alt="VK"></a></li>
-  </ul>
+<footer class="main-footer">
+  <div class="content">
 
-  <div class="footer-copyright">
-    <a class="footer-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/logo-htmlacademy.svg" width="100" height="100" alt="Логотип HTML Academy">
-    </a>
-    <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2018</p>
+    <ul class="footer-social">
+      <li><a class="social-button" href=""><img src="img/twitter.svg" alt="Twitter"></a></li>
+      <li><a class="social-button" href=""><img src="img/instagram.svg" alt="Instagram"></a></li>
+      <li><a class="social-button" href=""><img src="img/fb.svg" alt="Facebook"></a></li>
+      <li><a class="social-button" href=""><img src="img/VK.svg" alt="VK"></a></li>
+    </ul>
+
+    <div class="footer-info">
+      <ul>
+        <li><a href="#">Для поставщиков</a></li>
+        <li><a href="#">О производстве</a></li>
+
+      </ul>
+      <ul>
+        <li><a href="#">Наши документы</a></li>
+        <li><a href="#">Экологические стандарты</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-copyright">
+      <a class="footer-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy.svg" width="100" height="40" alt="Логотип HTML Academy"></a>
+        <p>Сделано в <a class="underline" href="https://htmlacademy.ru/intensive/htmlcss">
+          HTML Academy</a> © 2018</p>
+    </div>
+
   </div>
 </footer>
 
