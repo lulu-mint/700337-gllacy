@@ -14,6 +14,8 @@
   <nav class="main-navigation">
     <a class="main-header-logo"
        style="pointer-events: none; cursor: default;">
+      <!-- ИМХО: Некликабельно ТОЛЬКО для главной,
+       создавать еще один класс на один раз нецелесообразно. -->
       <img src="img/logo.svg" alt="Логотип GlacyShop">
     </a>
 
@@ -32,16 +34,24 @@
       <li><a href="#">О компании</a></li>
     </ul>
 
+    <ul class="search-on-site">
+      <li>
+        <button class="menu-button" type="button">
+          <img src="img/loupe.svg" alt="Что ищем?"></button> <!-- поменять .svg -->
+      </li>
+    </ul>
+    <div class="visually-hidden">
     <form name="search-on-site">
       <input type="text" name="search" placeholder="Что ищем?">
-      <button class="button" type="submit"><img src="img/loupe.svg" alt="Что ищем?"></button>
+      <button class="button" type="submit"><img src="img/loupe.svg" alt="Что ищем?"></button> <!-- поменять .svg -->
     </form>
+    </div>
 
     <ul class="user-navigation">
-      <li><a href="#">Вход</a></li>
+      <li><button class="menu-button" type="button">
+        <img src="img/entrance.svg" alt="Вход">Вход</button></li> <!-- поменять .svg -->
     </ul>
-
-
+    <div class="visually-hidden">
     <form class="modal modal-login">
       <label class="visually-hidden"
              for="user-login">Электронная почта</label>
@@ -54,18 +64,20 @@
       <a href="#">Новая регистрация</a>
       <button class="button" type="submit">Войти</button>
     </form>
+    </div>
 
 
     <ul class="cart-navigation">
-      <li><a href="#">Корзина</a></li>
+      <li><button class="menu-button" type="button">
+        <img src="img/cart-white.svg" alt="Корзина">Корзина</button></li> <!-- поменять .svg -->
     </ul>
-
-
+    <div class="visually-hidden">
     <form class="modal cart">
       <hr>
       <p>Итого:</p>
       <button class="button" type="submit">Оформить заказ</button>
     </form>
+    </div>
 
     <div class="header-phone-number">
       <p>С 10 до 20, ежедневно<br>
@@ -108,40 +120,38 @@
 
       <li class="catalog-item">
         <a href="#">
-          <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
           <p class="catalog-item-image">
             <img src="img/icecream1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           </p>
-        </a>
+          <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></a>
         <p class="catalog-item-price">310 ₽/кг</p>
       </li>
 
       <li class="catalog-item">
         <a href="#">
-          <h3>Сливочно-кофейное с кусочками шоколада</h3>
           <p class="catalog-item-image">
             <img src="img/icecream2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
           </p>
-        </a>
+          <h3>Сливочно-кофейное с кусочками шоколада</h3></a>
         <p class="catalog-item-price">380 ₽/кг</p>
       </li>
 
       <li class="catalog-item">
         <a href="#">
-          <h3>Сливочно-клубничное с рисыпкой из белого шоколада</h3>
           <p class="catalog-item-image">
             <img src="img/icecream3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           </p>
+          <h3>Сливочно-клубничное с рисыпкой из белого шоколада</h3>
         </a>
         <p class="catalog-item-price">355 ₽/кг</p>
       </li>
 
       <li class="catalog-item">
         <a href="#">
-          <h3>Сливочное крем-брюле с карамельной подливкой</h3>
           <p class="catalog-item-image">
             <img src="img/icecream4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
           </p>
+          <h3>Сливочное крем-брюле с карамельной подливкой</h3>
         </a>
         <p class="catalog-item-price">415 ₽/кг</p>
       </li>
