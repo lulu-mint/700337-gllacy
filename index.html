@@ -18,7 +18,8 @@
       <!-- ИМХО: Некликабельно ТОЛЬКО для главной,
        создавать еще один класс на один раз нецелесообразно. -->
       <img src="img/logo.svg" alt="Логотип GlacyShop"></a>
-    <div class="container">
+
+    <div class="nav-container">
       <ul class="site-navigation">
         <li><a href="catalog.html">Каталог</a>
           <ul class="sub-menu visually-hidden">
@@ -32,14 +33,18 @@
         </li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
-
       </ul>
 
       <ul class="user-navigation">
-
         <li class="search-on-site">
           <button class="menu-button" type="button">
-            <img src="img/loupe.svg" alt="Что ищем?"></button> <!-- поменять .svg -->
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17"
+                 viewBox="0 0 17 17">
+              <path fill="#fff"
+                    d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
+            </svg>
+            <span class="visually-hidden">Поиск по сайту</span>
+          </button>
         </li>
         <div class="visually-hidden">
           <form name="search-on-site">
@@ -51,9 +56,18 @@
 
         <li class="login">
           <button class="menu-button" type="button">
-            <img src="img/entrance.svg" alt="Вход">Вход
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19"
+                 viewBox="0 0 21 19">
+              <g fill="#000">
+                <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" fill="#fff"/>
+                <path
+                  d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"
+                  fill="#fff">
+              </g>
+            </svg>
+            <span>Вход</span>
           </button>
-        </li> <!-- поменять .svg -->
+        </li>
         <div class="visually-hidden">
           <form class="modal modal-login">
             <label class="visually-hidden"
@@ -71,9 +85,18 @@
 
         <li class="cart-navigation">
           <button class="menu-button" type="button">
-            <img src="img/cart-white.svg" alt="Корзина">Корзина
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+              <g fill="#FFF">
+                <path
+                  d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"
+                  fill="#fff"/>
+                <circle cx="6.984" cy="18" r="2" fill="#fff"/>
+                <circle cx="15.984" cy="18" r="2" fill="#fff"/>
+              </g>
+            </svg>
+            <span>Корзина</span>
           </button>
-        </li> <!-- поменять .svg -->
+        </li>
         <div class="visually-hidden">
           <form class="modal cart">
             <hr>
@@ -91,18 +114,6 @@
 <main class="main-content">
   <h1 class="visually-hidden">Магазин мороженого GlacyShop</h1>
 
-  <!--
-  <section class="gallery">
-    <h2 class="visually-hidden">Фотогалерея</h2>
-    <figure class="gallery-content">
-      <img src="img/slider1.png">
-    </figure>
-    <button class="gallery-button" type="button">1 фото</button>
-    <button class="gallery-button" type="button">2 фото</button>
-    <button class="gallery-button" type="button">3 фото</button>
-    <a class="button" href="#">Давайте оба!</a>
-  </section>
--->
 
   <div class="gallery">
     <div class="gallery-button">
@@ -181,19 +192,27 @@
     <p>Магазин Глэйси – это онлайн- и офлайн-магазин по продаже мороженного собственного
       производства на развес</p>
     <ul class="feature-list">
-      <li><img src="img/ice-cream.svg" width="45" height="45" alt="Мороженое">Всё наше мороженое изготавливается на собственном производстве, с
+      <li><img src="img/ice-cream.svg" width="45" height="45" alt="Мороженое">Всё наше мороженое изготавливается на
+        собственном производстве, с
         использованием современного оборудования и
-        проверенных временем технологий.</li>
+        проверенных временем технологий.
+      </li>
 
-      <li><img src="img/cow.svg" width="45" height="45" alt="Коровка">Закупка ингридиентов производится только у проверенных фермерских хозяйств
+      <li><img src="img/cow.svg" width="45" height="45" alt="Коровка">Закупка ингридиентов производится только у
+        проверенных фермерских хозяйств
         и компаний, с которыми нас связывает
-        долговременное сотрудничество.</li>
-      <li><img src="img/eco.svg" width="45" height="45" alt="Листик">Для приготовления мороженого используются настоящие сливки и молоко
+        долговременное сотрудничество.
+      </li>
+      <li><img src="img/eco.svg" width="45" height="45" alt="Листик">Для приготовления мороженого используются настоящие
+        сливки и молоко
         высочайшего качества. Все дополнительные
-        ингридиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-      <li><img src="img/thermometer.svg" width="45" height="45" alt="Термометр">Доставка нашего магазина до заказчиков осуществояеися в
+        ингридиенты и добавки произведены из натурального, экологически чистого сырья.
+      </li>
+      <li><img src="img/thermometer.svg" width="45" height="45" alt="Термометр">Доставка нашего магазина до заказчиков
+        осуществояеися в
         специальном термопаке, который не дает мороженому
-        растаять в пути и позволяет сохранить превосходный вкус.</li>
+        растаять в пути и позволяет сохранить превосходный вкус.
+      </li>
     </ul>
   </section>
 
@@ -206,20 +225,18 @@
 
     <section class="subscribe">
       <div class="cover">
-      <h2 class="visually-hidden">Подписка на рассылку новостей</h2>
-      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
-        что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-      <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
-      <input id="subscribe-email" type="text" name="subscribe-email" placeholder="Электронная почта">
-      <a class="button" href="#">Отправить</a>
+        <h2 class="visually-hidden">Подписка на рассылку новостей</h2>
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
+          что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+        <div class="wrap">
+          <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
+          <input id="subscribe-email" type="text" name="subscribe-email" placeholder="Электронная почта">
+          <a class="button" href="#">Отправить</a>
+        </div>
       </div>
     </section>
   </div>
 
-  <!-- <section class="modal-map">
-    <h2 class="visually-hidden">Где мы находимся</h2>
-    <p><img src="img/map.jpg" alt="Адрес магазина Глэйси"></p>
-  </section> -->
 
   <section class="address">
     <div class="info-address">
@@ -271,8 +288,8 @@
     <div class="footer-copyright">
       <a class="footer-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo-htmlacademy.svg" width="100" height="40" alt="Логотип HTML Academy"></a>
-        <p>Сделано в <a class="underline" href="https://htmlacademy.ru/intensive/htmlcss">
-          HTML Academy</a> © 2018</p>
+      <p>Сделано в <a class="underline" href="https://htmlacademy.ru/intensive/htmlcss">
+        HTML Academy</a> © 2018</p>
     </div>
 
   </div>

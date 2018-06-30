@@ -39,30 +39,31 @@ a:hover, a:active {
   color: white;
 }
 
-.main-navigation li {
-  list-style: none;
-}
 
-.site-navigation a,
-.user-navigation a,
-.cart-navigation a {
+
+.site-navigation a{
   color: white;
   font-size: 14px;
   font-weight: bold;
   line-height: 16px;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+text-decoration: underline;
+
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+
+  padding: 5px 10px;
 }
 
-.site-navigation a:hover,
-.user-navigation a:hover,
-.cart-navigation a:hover {
+.site-navigation a:hover{
   border-radius: 15px;
-  padding: 5px 10px;
+
   background: #f7f6f3;
   color: black;
   text-decoration: none;
 }
+
 .site-navigation,
 .user-navigation {
   margin: 0px;
@@ -87,15 +88,10 @@ a:hover, a:active {
   flex-wrap: wrap;
 }
 
-.site-navigation li {
-  padding: 0px;
-  margin:0px;
-  margin-right: 25px;
-}
 
 .user-navigation li {
   padding: 0px;
-  margin:0px;
+  margin: 0px;
   padding-left: 10px;
 }
 
@@ -168,12 +164,14 @@ a:hover, a:active {
 }
 
 .catalog-list a {
-  text-decoration: none;
+
+  color: white;
+  text-align: center;
 }
 
 .catalog-list h3 {
   font-size: 16px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  line-height: 22px;
 }
 
 .features {
@@ -199,7 +197,7 @@ a:hover, a:active {
   justify-content: space-between;
   /*margin-left: -15px;*/
   padding: 0px;
-  margin:0px;
+  margin: 0px;
 }
 
 .feature-list li {
@@ -231,7 +229,7 @@ a:hover, a:active {
   margin-right: 16px;
 
   border-radius: 25px;
-  padding: 15px 20px;
+  padding: 10px 20px;
   background: linear-gradient(#f26843, #e74a35);
   color: white;
   font-weight: bold;
@@ -248,35 +246,66 @@ a:hover, a:active {
   display: flex;
   justify-content: center;
 
-  border: 2px solid blueviolet;
+  /*border: 2px solid blueviolet;*/
 }
 
 .main-navigation {
   min-width: 850px;
   width: 1150px;
   display: flex;
+  align-items: center;
   padding: 0px 25px;
 
-  border: 2px solid green;
+  /*border: 2px solid green;*/
 }
 
 .main-header-logo {
   width: 155px;
   height: 75px;
+  display: flex;
+  align-items: center;
+
+  /*border: 2px solid red;*/
 }
 
-.container {
+.nav-container {
   display: flex;
   min-width: 695px;
   width: 995px;
   margin: auto;
-padding-left: 20px;
   justify-content: space-between;
 
-  border: 2px solid red;
+  /*border: 2px solid red;*/
 }
 
+.menu-button {
+  border: none;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  color: white;
 
+  padding: 5px 10px;
+}
+.menu-button:hover,
+.menu-button:active{
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+}
+.menu-button:hover path,
+.menu-button:hover circle,
+.menu-button:active path,
+.menu-button:active circle{
+  fill: #000000;
+}
+.menu-button span {
+  padding-left: 5px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}
 
 .main-content {
   min-width: 850px;
@@ -352,6 +381,26 @@ padding-left: 20px;
   line-height: 22px;
   color: #5a5a5a;
   font-weight: normal;
+}
+
+.subscribe input {
+  width: 360px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 4px;
+  color: #999999;
+}
+
+.wrap {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe .button {
+  padding: 10px 15px;
 }
 
 .main-footer {
