@@ -8,6 +8,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="inner-page">
+<div class="inner-page-container">
 <header class="main-header">
 
   <nav class="main-navigation">
@@ -106,7 +107,7 @@
 </header>
 
 
-<main class="main-content">
+<main>
 
   <ul class="breadcrumbs">
     <li><a href="index.html">Главная</a></li>
@@ -127,7 +128,7 @@
           <input list="sort-by">
         </label>
         <datalist id="sort-by">
-          <option value="по популярности">
+          <option value="по популярности" >
           <option value="сначала недорогие">
           <option value="сначала дорогие">
           <option value="по жирности">
@@ -140,7 +141,7 @@
       </div>
 
       <div >
-        <label>Жирность:</label>
+        <label class="label">Жирность:</label>
         <ul class="filter-element">
 
           <li class="filter-option">
@@ -207,7 +208,7 @@
 
         </ul>
       </div>
-      <button class="button" type="submit">Применить</button>
+      <button class="filter-button" type="submit">Применить</button>
     </form>
   </section>
 
@@ -349,6 +350,8 @@
       </li>
     </ul>
 
+  </section>
+  <div class="pagination-list-wrap">
     <ul class="pagination-list">
       <li class="pagination-item"><a class="disabled">&lt;</a></li>
       <li class="pagination-item pagination-item-current"><a href="catalog.html">1</a></li>
@@ -358,7 +361,7 @@
       <li class="pagination-item"><a href="#">5</a></li>
       <li class="pagination-item"><a href="#">&gt;</a></li>
     </ul>
-  </section>
+  </div>
 </main>
 
 <footer class="main-footer">
@@ -392,6 +395,6 @@
 
   </div>
 </footer>
-
+</div>
 </body>
 </html>
