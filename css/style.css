@@ -560,7 +560,23 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-
+.social-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.7);
+  opacity: 0.7;
+}
+.social-button:hover{
+  opacity: 1;
+}
+.social-button:active{
+  opacity: 0.9;
+  border: 2px solid rgba(255,255,255,0.9);
+}
 .footer-info {
   width: 350px;
   display: flex;
@@ -637,15 +653,6 @@ a {
   background-image: url("../img/bg-fade.jpg");
   background-position: 0 0;
   background-repeat: repeat-x;
-}
-.inner-page-container {
-  box-sizing: border-box;
-  min-width: 900px;
-  width: 1200px;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0 auto;
 }
 .inner-page main{
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
