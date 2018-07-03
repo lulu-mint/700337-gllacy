@@ -835,9 +835,11 @@ a {
 */
 .catalog {
   margin-bottom: 80px;
-  margin-left: -20px;
+  margin-left: -18px;
 
-  /*border: 2px solid red;*/
+  /*
+  border: 2px solid red;
+  */
 }
 .catalog-list {
   list-style: none;
@@ -867,14 +869,16 @@ a {
   position: relative;
   width: 275px;
   margin-bottom: 20px;
-  margin-left: 15px;
+  margin-left: 16px;
 }
 
 .catalog-item:hover {
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
+.catalog-item:hover ~ .catalog-item-button{
+  display: block;
+}
 .catalog-item a {
   display: flex;
   flex-direction: column;
@@ -884,11 +888,12 @@ a {
 
 .catalog-item h3 {
   order: 1;
-  margin-top: 0px;
+  padding: 0;
+  margin-top: 0;
   margin-bottom: 20px;
-  margin-left: 25px;
-  margin-right: 25px;
   text-decoration: underline;
+  margin-left: 6px;
+  margin-right: 6px;
 
   font-size: 16px;
   line-height: 22px;
