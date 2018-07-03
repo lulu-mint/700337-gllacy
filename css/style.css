@@ -858,18 +858,16 @@ a {
   line-height: 22px;
 }
 .catalog-list img {
-  width: 100%;
+  width: 95%;
   height: auto;
   border-radius: 50%;
 }
 
 .catalog-item {
   position: relative;
-  width: 270px;
+  width: 275px;
   margin-bottom: 20px;
-  margin-left: 20px;
-
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 15px;
 }
 
 .catalog-item:hover {
