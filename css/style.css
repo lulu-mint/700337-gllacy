@@ -533,7 +533,6 @@ a {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-top: 15px;
   margin-bottom: 30px;
   align-items: center;
   /*border: 2px solid red;*/
@@ -567,15 +566,6 @@ a {
   font-size: 18px;
   line-height: 24px;
 }
-
-/* ФУТЕР!!! */
-
-.main-footer {
-  display: flex;
-  justify-content: center;
-  height: 100px;
-}
-
 .info-address {
   background-color: #fefefe;
   color: black;
@@ -587,14 +577,32 @@ a {
   margin-right: 25px;
   align-self: center;
 }
+/* ФУТЕР!!! */
+
+.main-footer {
+  display: flex;
+  justify-content: center;
+  min-height: 100px;
+}
+.main-footer .content{
+  margin-top: 15px;
+}
+
 
 .footer-social {
-  width: 190px;
+  width: 265px;
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-left: -10px;
+
+  /*border: 2px solid red;*/
 }
 
 .social-button {
@@ -606,6 +614,8 @@ a {
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.7);
   opacity: 0.7;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .social-button:hover {
