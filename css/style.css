@@ -423,7 +423,8 @@ a {
 }
 
 .feature-list li {
-  width: 48%;
+  width: 40%;
+  flex-grow: 1;
   font-size: 16px;
   line-height: 22px;
   position: relative;
