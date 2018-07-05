@@ -125,11 +125,9 @@
 
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
 
-      <div>
-        <label>
-          Сортировка:<br>
-          <input list="sort-by">
-        </label>
+      <div class="filter-element">
+        <label class="filter-label" for="list-sort-by">Сортировка:</label>
+        <input class="input-sort-by" list="sort-by" id="list-sort-by">
         <datalist id="sort-by">
           <option value="по популярности" >
           <option value="сначала недорогие">
@@ -138,14 +136,14 @@
         </datalist>
       </div>
 
-      <div>
-        <label>Цена:<br>
-          <input type="range" name="cost"></label>
+      <div class="filter-element">
+        <label class="filter-label" for="range-cost">Цена:</label>
+        <div class="input-range"><input class="input" type="range" name="cost" id="range-cost"></div>
       </div>
 
-      <div >
-        <label class="label">Жирность:</label>
-        <ul class="filter-element">
+      <div class="filter-element">
+        <label class="filter-label" for="fatness-filter">Жирность:</label>
+        <ul id="fatness-filter">
 
           <li class="filter-option">
             <input class="visually-hidden filter-input filter-input-radio" type="radio"
@@ -155,8 +153,7 @@
 
           <li class="filter-option">
             <input class="visually-hidden filter-input filter-input-radio" type="radio"
-                   name="percents" id="lt-ten-percent"
-                   checked>
+                   name="percents" id="lt-ten-percent" checked>
             <label for="lt-ten-percent">до 10%</label>
           </li>
 
@@ -175,9 +172,9 @@
         </ul>
       </div>
 
-      <div >
-        <label>Наполнители:</label>
-        <ul class="filter-element">
+      <div class="filter-element">
+        <label class="filter-label">Наполнители:</label>
+        <ul>
 
           <li class="filter-option">
             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"

@@ -799,7 +799,10 @@ a {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .breadcrumbs a {
@@ -850,37 +853,52 @@ a {
   flex-wrap: wrap;
 }
 
-.filter div {
+.filter-element {
   margin-right: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
+  justify-content: flex-start;
+  position: relative;
 
-.filter-element {
-  display: flex;
-  flex-direction: row;
+  border: 2px solid darkorange;
 }
-
-.filter fieldset {
-  padding: 0;
+.filter-element .input{
   margin: 0;
-  margin-bottom: 20px;
-  border: none;
+  padding: 0;
 }
+.filter-element .filter-label{
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  margin-bottom: 5px;
 
-.filter legend {
+
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 26px;
-}
 
-.filter ul {
-  padding: 0;
+  /*
+  border: 2px solid fuchsia;
+  */
+}
+.filter-element ul {
+  display: flex;
+  flex-direction: row;
   margin: 0;
+  /*
+  border: 2px solid crimson;
+  */
+
   list-style: none;
   font-size: 16px;
   line-height: 18px;
+
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  color: white;
+
+  padding: 10px 0;
+  padding-left: 20px;
 }
 
 .filter-input:hover + label,
@@ -893,10 +911,27 @@ a {
 
   opacity: 0.5;
 }
-
+.filter-element .input-sort-by{
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 5px 15px;
+  padding-right: 5px;
+}
+.filter-element .input-range{
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 5px 15px;
+  padding-right: 5px;
+}
 .filter-option {
-  margin-bottom: 19px;
-  padding-left: 45px;
+  padding-left: 30px;
+  padding-right: 20px;
 }
 
 .filter-option label {
@@ -915,29 +950,31 @@ a {
   left: -35px;
   top: -3px;
 
-  width: 27px;
+  width: 23px;
   height: 23px;
 }
 
 .filter-input-checkbox:checked + label::before {
   content: "";
   background: url("../img/checkbox-on.svg") left no-repeat;
+  background-size: cover;
   position: absolute;
   left: -35px;
 
-  width: 27px;
+  width: 25px;
   height: 23px;
 }
 
 .filter-input-radio + label::before {
   content: "";
   background: url("../img/radio-off.svg") no-repeat;
+  background-size: cover;
   position: absolute;
   left: -35px;
   top: -3px;
 
-  width: 25px;
-  height: 25px;
+  width: 23px;
+  height: 23px;
 
   border-radius: 50%;
 }
@@ -945,24 +982,24 @@ a {
 .filter-input-radio:checked + label::before {
   content: "";
   background: url("../img/radio-on.svg") no-repeat;
+  background-size: cover;
   position: absolute;
   left: -35px;
   top: -3px;
 
-  width: 25px;
-  height: 25px;
+  width: 23px;
+  height: 23px;
   border-radius: 50%;
 }
 
 .filter-button {
-  border: none;
-  display: flex;
-  align-self: center;
+  border: 2px solid white;
+  align-self: flex-end;
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
+  border-radius: 25px;
   color: white;
 
-  padding: 5px 10px;
+  padding: 10px 15px;
 }
 
 /* РАЗДЕЛ КАТАЛОГА */
