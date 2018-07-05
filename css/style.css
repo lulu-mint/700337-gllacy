@@ -166,12 +166,18 @@ a {
 #product-3:checked ~ .site-wrapper label[for="product-3"] {
   background-color: #ffffff;
 }
-
+/*
+МЕНЮХА
+*/
+.main-header{
+  margin-bottom: 20px;
+  /*border: 2px solid orange;*/
+}
 .main-navigation {
   display: flex;
   align-items: center;
-
-  /*  border: 2px solid green;*/
+  position: relative;
+    /*border: 2px solid green;*/
 }
 
 .main-header-logo {
@@ -231,12 +237,18 @@ a {
   font-weight: bold;
   color: white;
 }
-
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
 .site-navigation a {
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
-  line-height: 16px;
+  line-height: 18px;
   text-decoration: underline;
 
   background-color: transparent;
@@ -244,16 +256,21 @@ a {
   align-items: center;
   border-radius: 15px;
   padding: 5px 10px;
+  margin-left: 12px;
 }
 
 .site-navigation a:hover {
-  color: black;
+  color: #323232;
   text-decoration: none;
 
   background-color: #f7f6f3;
   border-radius: 15px;
 }
 
+
+.site-navigation .main-navigation-current{
+  background-color: #d07058;
+}
 .site-navigation,
 .user-navigation {
   margin: 0;
@@ -262,59 +279,82 @@ a {
   list-style: none;
 }
 
-.site-navigation {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 390px;
-}
 
 .user-navigation {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  max-width: 260px;
+  max-width: 265px;
   flex-wrap: wrap;
+  /*border: 2px solid red;*/
 }
 
 .user-navigation li {
   padding: 0;
   margin: 0;
   padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10PX;
+}
+.nav-container li {
+  position: relative;
 }
 
+.site-navigation > li:hover .sub-menu {
+  display: block;
+}
+/* Подменю самого Дьявола!
+ Подменю это очень больно. */
 .sub-menu {
   position: absolute;
   top: 25px;
   left: 0;
   z-index: 10;
   display: none;
-  width: 140px;
+  width: 145px;
   margin: 0;
   padding: 0;
   list-style: none;
   background: #f8f7f4;
+  border-radius: 5px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 }
 
-/* Подменю самого Дьявола!
- Подменю это очень больно. */
-.nav-container li {
-  position: relative;
+.sub-menu li{
+  width: 96%;
+  margin: 0 auto;
 }
-
 .sub-menu a {
   display: block;
   padding: 8px 14px;
   text-decoration: none;
-  color: #000000;
-  border: 1px solid #e5e5e5;
+
+  font: inherit;
+  color: #323232;
   border-radius: 0;
 }
-
-.site-navigation > li:hover .sub-menu {
-  display: block;
+.sub-menu a:hover{
+  background-color: #fbded8;
+  border-radius: 0;
+}
+.sub-menu a:active{
+  background-color: #f6b5a5;
+}
+.site-navigation .site-navigation-current{
+  background-color: #d07058;
+  color: white;
+}
+.sub-menu .special-link{
+  font-weight: bolder;
+  border-bottom: 1px solid #d1d0ce;
+}
+.header-phone-number{
+  position: absolute;
+  top:90%;
 }
 .header-phone-number p {
   font-size: 14px;
@@ -333,9 +373,8 @@ a {
   display: flex;
   justify-content: flex-end;
 }
+
 /* МОДАЛЬНЫЕ ОКНА */
-
-
 
 .modal a {
   color: black;
@@ -410,7 +449,6 @@ a {
   box-sizing: border-box;
 }
 
-
 .feature-list {
   list-style: none;
   display: flex;
@@ -432,15 +470,18 @@ a {
 
   /*border: 2px solid red;*/
 }
-.feature-list img{
+
+.feature-list img {
   position: absolute;
   width: 50px;
   height: 50px;
 }
-.feature-list p{
+
+.feature-list p {
   margin-top: 10px;
   margin-left: 55px;
 }
+
 .features-big {
   padding: 0;
   margin: 0;
@@ -471,10 +512,12 @@ a {
   color: black;
   font-weight: normal;
 }
-.blog-news div{
+
+.blog-news div {
   margin-top: 10px;
   width: 54%;
 }
+
 .article-head {
   color: black;
   font-weight: bold;
@@ -482,7 +525,9 @@ a {
   line-height: 30px;
   border-bottom: 2px solid black;
 }
-
+/*
+ОБРАТИ НА МЕНЯ ВНИМАНИЕ!!! Я НЕ ДОДЕЛАН!!!
+*/
 .subscribe {
   width: 49%;
   min-height: 220px;
@@ -494,6 +539,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 
   padding: 2px;
 }
@@ -501,7 +547,7 @@ a {
 .subscribe-cover {
   margin: 0;
   width: 98%;
-  min-height: 210px;
+  height: 96%;
   background-color: #f8f7f4;
   border-radius: 15px;
   box-sizing: border-box;
@@ -509,10 +555,14 @@ a {
   line-height: 22px;
   color: #5a5a5a;
   font-weight: normal;
-
+/*margin-top: 2px;
+  margin-bottom: 2px;*/
   padding: 10px;
 }
-.subscribe-cover p{}
+
+.subscribe-cover p {
+}
+
 .subscribe-cover .content {
   margin-top: 30px;
 }
@@ -542,16 +592,19 @@ a {
   margin-left: 10px;
   margin-right: 0;
 }
+
 /* АДРЕС МАГАЗИНА И КАРТА */
 .address {
   background: url("../img/map.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  width: 1200px;
-  min-width: 900px;
-  height: 430px;
+  width: 100%;
+  min-height: 430px;
   margin-left: -25px;
+  margin-right: -25px;
 }
 
 .address p {
@@ -566,6 +619,7 @@ a {
   font-size: 18px;
   line-height: 24px;
 }
+
 .info-address {
   background-color: #fefefe;
   color: black;
@@ -575,22 +629,28 @@ a {
   box-sizing: border-box;
   border-radius: 15px;
   margin-right: 25px;
+  display: flex;
+  flex-direction: column;
   align-self: center;
+}
+.info-address .button{
+  width: 100%;
+  margin: 0;
 }
 /* ФУТЕР!!! */
 
 .main-footer {
   display: flex;
   justify-content: center;
-  min-height: 100px;
+  height: 100px;
 }
-.main-footer .content{
+
+.main-footer .content {
   margin-top: 15px;
 }
-
-
+/* СОШЛ БАТОНЫ  */
 .footer-social {
-  width: 265px;
+  width: 200px;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -601,7 +661,6 @@ a {
   padding: 0;
   box-sizing: border-box;
   margin-left: -10px;
-
   /*border: 2px solid red;*/
 }
 
@@ -609,11 +668,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.7);
+  border: 3px solid rgba(255, 255, 255, 0.7);
   opacity: 0.7;
+  margin: 0;
   margin-left: 10px;
   margin-top: 10px;
 }
@@ -626,18 +686,26 @@ a {
   opacity: 0.9;
   border: 2px solid rgba(255, 255, 255, 0.9);
 }
-
+.social-button img{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-bottom: 1px;
+}
+/* КОЛОНКИ ССЫЛОК В ФУТЕРЕ */
 .footer-info {
-  width: 350px;
+  width: 360px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .footer-info ul {
   list-style: none;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .footer-info a {
@@ -646,16 +714,44 @@ a {
   font: inherit;
   font-size: 13px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.footer-info-special{
+  position: relative;
+}
+.footer-info-special::before{
+  content: "";
+  background: url("../img/heart.svg") no-repeat;
+  position: absolute;
+  left: -25px;
+  top: 1px;
+
+  width: 23px;
+  height: 23px;
 
 }
-
+/* КОПИРАЙТЫ Ы-Ы-Ы-Ы-Ы :В  */
 .footer-copyright {
+  margin: 0;
+  padding: 0;
   width: 190px;
-  height: 60px;
+  min-height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: auto;
+  margin-bottom: auto;
+
   text-decoration: none;
   font-size: 12px;
   color: whitesmoke;
-  align-items: center;
+}
+.footer-academy-logo{
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  width: 100px;
+  background-repeat: no-repeat;
 }
 
 .footer-copyright .underline {
