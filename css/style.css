@@ -244,6 +244,10 @@ a {
   flex-wrap: wrap;
   max-width: 400px;
 }
+.site-navigation li{
+  margin-left: 12px;
+  margin-top: 10px;
+}
 .site-navigation a {
   color: white;
   font-size: 16px;
@@ -256,8 +260,8 @@ a {
   align-items: center;
   border-radius: 15px;
   padding: 5px 10px;
-  margin-left: 12px;
 }
+
 
 .site-navigation a:hover {
   color: #323232;
@@ -295,7 +299,6 @@ a {
   margin: 0;
   padding-left: 10px;
   margin-top: 10px;
-  margin-bottom: 10PX;
 }
 .nav-container li {
   position: relative;
@@ -308,7 +311,7 @@ a {
  Подменю это очень больно. */
 .sub-menu {
   position: absolute;
-  top: 25px;
+  top: 30px;
   left: 0;
   z-index: 10;
   display: none;
@@ -329,6 +332,7 @@ a {
   margin: 0 auto;
 }
 .sub-menu a {
+  margin: 0;
   display: block;
   padding: 8px 14px;
   text-decoration: none;
