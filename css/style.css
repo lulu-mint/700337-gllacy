@@ -12,7 +12,10 @@ body {
 a {
   text-decoration: none;
 }
-
+.disabled{
+  cursor: default;
+  pointer-events: none;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -33,7 +36,9 @@ a {
   padding: 0 25px;
   margin: 0 auto;
 
+  /*
   border: 2px solid blueviolet;
+  */
 }
 
 .button {
@@ -604,7 +609,30 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
 
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+.modal-error {
+  animation: shake 0.6s;
+}
 /*
 Раздел экстра добавок
 */
@@ -826,10 +854,10 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  width: 100%;
+  min-width: 900px;
+  width: 1200px;
   min-height: 430px;
   margin-left: -25px;
-  margin-right: 25px;
 }
 
 .address p {
@@ -870,6 +898,9 @@ a {
   display: flex;
   justify-content: center;
   height: 100px;
+  /*
+  border-top: 1px solid rgba(255,255,255,0.5);
+  */
 }
 
 .main-footer .content {
@@ -1432,3 +1463,4 @@ background: url("../img/pagin-arrow.svg") no-repeat center;
   font-size: 0;
   background: url("../img/pagin-arrow.svg") no-repeat center;
 }
+
