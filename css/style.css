@@ -263,9 +263,11 @@ a {
   font-weight: bold;
   color: white;
 }
-.search-button{
-  padding:6px;
+
+.search-button {
+  padding: 6px;
 }
+
 .site-navigation {
   display: flex;
   flex-direction: row;
@@ -453,6 +455,10 @@ a {
 }
 
 .modal-login {
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   top: 35px;
   right: 0;
 
@@ -460,11 +466,12 @@ a {
   padding: 20px;
 }
 
-.login-link:hover .modal-login {
+.login-link:hover ~ .modal-login {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+}
+
+.modal-login:hover {
+  display: flex;
 }
 
 .modal-login .links-column {
@@ -498,6 +505,14 @@ a {
   margin-bottom: 0;
 }
 
+.search-button:hover ~ .modal-search-on-site {
+  display: flex;
+}
+
+.modal-search-on-site:hover {
+  display: flex;
+}
+
 .modal-cart {
   top: 35px;
   right: 0;
@@ -526,6 +541,14 @@ a {
   padding: 0;
   padding-bottom: 15px;
   border-bottom: 1px solid #cacac7;
+}
+
+.cart-link:hover ~ .modal-cart {
+  display: flex;
+}
+
+.modal-cart:hover {
+  display: flex;
 }
 
 .modal-feedback {
@@ -627,14 +650,13 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 40px;
-
+  margin-bottom: 80px;
   min-height: 220px;
 }
 
 .extra-raspberry {
   max-width: 49%;
-  padding: 18px 20px;
+  padding: 16px 20px;
   box-sizing: border-box;
   border-radius: 20px;
   background-image: url("../img/bg-raspberry.jpg");
@@ -645,7 +667,7 @@ a {
 
 .extra-chocolate {
   max-width: 49%;
-  padding: 18px 20px;
+  padding: 16px 20px;
   box-sizing: border-box;
   border-radius: 20px;
   background-image: url("../img/bg-chocolate.jpg");
@@ -678,11 +700,13 @@ a {
   padding-right: 22px;
   margin-bottom: 7px;
 }
-.hit{
+
+.hit {
   position: absolute;
-  top:20px;
+  top: 20px;
   left: 5px;
 }
+
 /* О КОМПАНИИ */
 
 .features {
@@ -693,7 +717,7 @@ a {
   background-color: #eaddbf;
   background-image: url("../img/vafle.jpg");
   color: #323232;
-  padding: 25px 20px 10px;
+  padding: 25px 20px 7px;
   box-sizing: border-box;
 }
 
@@ -726,7 +750,7 @@ a {
 }
 
 .feature-list p {
-  margin-top: 12px;
+  margin-top: 8px;
   margin-left: 55px;
 }
 
@@ -806,7 +830,7 @@ a {
   font-weight: normal;
   /*margin-top: 2px;
     margin-bottom: 2px;*/
-  padding:10px 20px;
+  padding: 10px 20px;
 }
 
 .subscribe-cover p {
@@ -825,10 +849,12 @@ a {
 .subscribe .button {
   padding: 10px 16px;
 }
-.content-cover{
+
+.content-cover {
   display: flex;
   margin-bottom: 20px;
 }
+
 .content {
   display: flex;
   width: 100%;
@@ -846,7 +872,7 @@ a {
 
 /* АДРЕС МАГАЗИНА И КАРТА */
 .address {
-  background: url("../img/map.jpg");
+  background: url("../img/map.jpg ");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -967,9 +993,11 @@ a {
   flex-direction: column;
   margin: 0;
 }
-.footer-info li{
+
+.footer-info li {
   margin-bottom: 5px;
 }
+
 .footer-info a {
   color: white;
   text-decoration: none;
@@ -1174,8 +1202,6 @@ a {
   opacity: 0.5;
 }
 
-
-
 .filter-element .list-sort-by {
   width: 195px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -1185,7 +1211,6 @@ a {
   padding: 8px 12px;
   padding-right: 5px;
 }
-
 
 .filter-option {
   padding-left: 30px;
@@ -1284,7 +1309,9 @@ a {
   box-shadow: inset 0 2px 2px rgba(77, 77, 77, 1);
 }
 
-
+/*
+RANGE-BAR
+*/
 .range {
   width: 220px;
 }
@@ -1296,6 +1323,7 @@ a {
   color: white;
   border: none;
 }
+
 .range-controls {
   position: relative;
   background-color: rgba(255, 255, 255, 0.2);
@@ -1306,12 +1334,15 @@ a {
 .range-controls .scale {
   height: 3px;
   background: rgba(255, 255, 255, 0.3);
-}.range-controls .bar {
-   width: 60%;
-   height: 3px;
+}
+
+.range-controls .bar {
+  width: 60%;
+  height: 3px;
   margin-left: 20px;
-   background: #ffffff;
- }
+  background: #ffffff;
+}
+
 .range-toggle {
   position: absolute;
   top: 10px;
@@ -1333,10 +1364,11 @@ a {
 .range-toggle-max {
   left: 60%;
 }
+
 .range-toggle:hover {
   width: 6px;
   height: 6px;
-  top:9px;
+  top: 9px;
 }
 
 /* РАЗДЕЛ КАТАЛОГА */
@@ -1354,6 +1386,7 @@ a {
   margin: 0;
   margin-top: 72px;
 }
+
 .catalog-item {
   position: relative;
   width: 275px;
@@ -1363,6 +1396,7 @@ a {
   padding-bottom: 65px;
   margin-top: -60px;
 }
+
 .catalog-item a {
   display: flex;
   flex-direction: column;
@@ -1392,7 +1426,7 @@ a {
 }
 
 .catalog-item:hover {
-  background-color: rgba(156,176,165,0.6);
+  background-color: rgba(156, 176, 165, 0.6);
   box-shadow: 0 1em 30px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   z-index: 2;
@@ -1421,9 +1455,11 @@ a {
   font-weight: bold;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-.catalog-item-price span{
+
+.catalog-item-price span {
   font-size: 30px;
 }
+
 /*ПАГИНАЦИЯ*/
 
 .pagination-list-wrap {
