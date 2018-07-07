@@ -35,7 +35,7 @@
         <div class="user-navigation">
 
           <div class="search-on-site">
-            <button class="menu-button" type="button">
+            <button class="menu-button search-button" type="button">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17"
                    height="17"
                    viewBox="0 0 17 17">
@@ -44,7 +44,7 @@
               <span class="visually-hidden">Поиск по сайту</span>
             </button>
 
-            <form class="modal modal-search-on-site visually-hidden">
+            <form class="modal modal-search-on-site">
               <label class="visually-hidden" for="search-on-site">Ваше имя</label>
               <input id="search-on-site" type="text" name="search" placeholder="Что ищем?">
             </form>
@@ -66,7 +66,7 @@
               <span>Вход</span>
             </a>
 
-            <form class="modal modal-login visually-hidden" method="get" action="https://echo.htmlacademy.ru">
+            <form class="modal modal-login" method="get" action="https://echo.htmlacademy.ru">
               <label class="visually-hidden"
                      for="user-login">Электронная почта</label>
               <input class="login-user" id="user-login" type="text"
@@ -86,7 +86,7 @@
 
 
           <div class="cart-navigation">
-            <button class="menu-button" type="button">
+            <a class="menu-button" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
                 <g fill="#FFF">
                   <path
@@ -97,9 +97,9 @@
                 </g>
               </svg>
               <span>Корзина</span>
-            </button>
+            </a>
 
-            <form class="modal modal-cart visually-hidden">
+            <form class="modal modal-cart">
               <div class="modal-cart-items"></div>
               <p class="modal-cart-cost">Итого: </p>
               <button class="button" type="submit">Оформить заказ</button>
@@ -109,8 +109,8 @@
       </div>
 
       <div class="header-phone-number">
-        <p>С 10 до 20, ежедневно<br>
-          <strong>8 812 450-25-25</strong></p>
+        <p>С 10 до 20, ежедневно</p>
+          <p><strong>8 812 450-25-25</strong></p>
       </div>
 
     </nav>
@@ -133,13 +133,12 @@
 
       <div class="filter-element">
         <label class="filter-label" for="list-sort-by">Сортировка:</label>
-        <input class="input-sort-by" list="sort-by" id="list-sort-by">
-        <datalist id="sort-by">
-          <option value="по популярности" >
-          <option value="сначала недорогие">
-          <option value="сначала дорогие">
-          <option value="по жирности">
-        </datalist>
+        <select class="list-sort-by" id="list-sort-by">
+          <option label="по популярности" >
+          <option label="сначала недорогие">
+          <option label="сначала дорогие">
+          <option label="по жирности">
+        </select>
       </div>
 
       <div class="filter-element">
@@ -148,28 +147,28 @@
       </div>
 
       <div class="filter-element">
-        <label class="filter-label" for="fatness-filter">Жирность:</label>
-        <ul id="fatness-filter">
+        <label class="filter-label">Жирность:</label>
+        <ul>
 
-          <li class="filter-option">
+          <li class="filter-option filter-option-radio">
             <input class="visually-hidden filter-input filter-input-radio" type="radio"
                    name="percents" id="filter-zero-percent">
             <label for="filter-zero-percent">0%</label>
           </li>
 
-          <li class="filter-option">
+          <li class="filter-option filter-option-radio">
             <input class="visually-hidden filter-input filter-input-radio" type="radio"
                    name="percents" id="lt-ten-percent" checked>
             <label for="lt-ten-percent">до 10%</label>
           </li>
 
-          <li class="filter-option">
+          <li class="filter-option filter-option-radio">
             <input class="visually-hidden filter-input filter-input-radio" type="radio"
                    name="percents" id="lt-thirty-percent">
             <label for="lt-thirty-percent">до 30%</label>
           </li>
 
-          <li class="filter-option">
+          <li class="filter-option filter-option-radio">
             <input class="visually-hidden filter-input filter-input-radio" type="radio"
                    name="percents" id="gt-thirty-percent">
             <label for="gt-thirty-percent">выше 30%</label>
@@ -407,7 +406,5 @@
   </div>
 </footer>
 </div>
-
-<script src="js/script.js"></script>
 </body>
 </html>

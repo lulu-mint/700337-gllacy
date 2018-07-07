@@ -12,10 +12,12 @@ body {
 a {
   text-decoration: none;
 }
-.disabled{
+
+.disabled {
   cursor: default;
   pointer-events: none;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -107,7 +109,7 @@ a {
 .slide-title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 
   font-size: 60px;
   line-height: 60px;
@@ -124,7 +126,7 @@ a {
 
 .slider-controls {
   position: absolute;
-  bottom: 63px;
+  bottom: 20px;
   left: 0;
   z-index: 1;
 
@@ -188,28 +190,36 @@ a {
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: -3px;
+  align-content: center;
 
-  /*border: 2px solid green;*/
+  /*
+  border: 2px solid green;
+  */
 }
 
 .main-header-logo {
   width: 155px;
-  height: 75px;
+  height: 85px;
   display: flex;
   align-items: center;
 
-  /*border: 2px solid red;*/
+  /*
+  border: 2px solid red;
+  */
 }
 
 .nav-container {
   display: flex;
   min-width: 695px;
   width: 995px;
-  margin: auto;
+  align-items: center;
   justify-content: space-between;
 
-  /*border: 2px solid red;*/
+  /*
+  border: 2px solid red;
+  */
 }
 
 .menu-button {
@@ -217,10 +227,9 @@ a {
   display: flex;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
+  border-radius: 25px;
   color: white;
-
-  padding: 5px 10px;
+  padding: 6px 13px;
 }
 
 .menu-button:hover,
@@ -254,7 +263,9 @@ a {
   font-weight: bold;
   color: white;
 }
-
+.search-button{
+  padding:6px;
+}
 .site-navigation {
   display: flex;
   flex-direction: row;
@@ -265,7 +276,6 @@ a {
 
 .site-navigation li {
   margin-left: 12px;
-  margin-top: 10px;
 }
 
 .site-navigation a {
@@ -320,7 +330,6 @@ a {
   padding: 0;
   margin: 0;
   padding-left: 10px;
-  margin-top: 10px;
   position: relative;
 }
 
@@ -390,10 +399,18 @@ a {
 
 .header-phone-number {
   position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
   top: 90%;
 }
 
 .header-phone-number p {
+  display: block;
+  float: right;
+  margin: 0;
   font-size: 14px;
   line-height: 16px;
   font-weight: bold;
@@ -405,15 +422,10 @@ a {
   font-weight: bold;
 }
 
-.header-phone-number {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
 /* МОДАЛЬНЫЕ ОКНА */
 
 .modal {
+  display: none;
   position: absolute;
   color: #000000;
   background-color: #f8f7f4;
@@ -423,14 +435,11 @@ a {
 
   z-index: 3;
 }
-.modal-show {
-  display: block;
 
-  animation: bounce 0.6s;
-}
 .modal-error {
   animation: shake 0.6s;
 }
+
 .modal a {
   color: #323232;
   font-size: 13px;
@@ -448,7 +457,9 @@ a {
 
   width: 280px;
   padding: 20px;
+}
 
+.login-link:hover .modal-login {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -480,7 +491,6 @@ a {
   width: 340px;
   padding: 20px 15px;
 
-  display: block;
 }
 
 .modal-search-on-site input {
@@ -496,7 +506,6 @@ a {
   margin: 0;
   box-sizing: border-box;
 
-  display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
@@ -609,42 +618,21 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
-@keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
 
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(10px);
-  }
-}
-.modal-error {
-  animation: shake 0.6s;
-}
 /*
 Раздел экстра добавок
 */
 .extra-promotion {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 40px;
+
+  min-height: 220px;
 }
 
 .extra-raspberry {
   max-width: 49%;
-  min-height: 230px;
   padding: 18px 20px;
   box-sizing: border-box;
   border-radius: 20px;
@@ -656,7 +644,6 @@ a {
 
 .extra-chocolate {
   max-width: 49%;
-  min-height: 230px;
   padding: 18px 20px;
   box-sizing: border-box;
   border-radius: 20px;
@@ -664,6 +651,7 @@ a {
   background-color: #3f2417;
   background-repeat: no-repeat;
   background-size: cover;
+  display: block;
 }
 
 .extra-promotion h3 {
@@ -671,12 +659,12 @@ a {
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
-  padding-bottom: 18px;
+  padding-bottom: 15px;
 }
 
 .extra-promotion p {
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
 
   font-size: 18px;
   line-height: 22px;
@@ -685,19 +673,26 @@ a {
 
 .extra-promotion .button {
   float: right;
-  margin-bottom: 20px;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-bottom: 7px;
 }
-
+.hit{
+  position: absolute;
+  top:20px;
+  left: 5px;
+}
 /* О КОМПАНИИ */
 
 .features {
   width: 100%;
+  margin-top: -40px;
   margin-bottom: 40px;
   border-radius: 20px;
   background-color: #eaddbf;
   background-image: url("../img/vafle.jpg");
   color: #323232;
-  padding: 20px;
+  padding: 25px 20px 10px;
   box-sizing: border-box;
 }
 
@@ -730,13 +725,14 @@ a {
 }
 
 .feature-list p {
-  margin-top: 10px;
+  margin-top: 12px;
   margin-left: 55px;
 }
 
 .features-big {
   padding: 0;
   margin: 0;
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -766,7 +762,6 @@ a {
 }
 
 .blog-news div {
-  margin-top: 10px;
   width: 54%;
 }
 
@@ -800,7 +795,7 @@ a {
 .subscribe-cover {
   margin: 0;
   width: 98%;
-  height: 96%;
+  min-height: 96%;
   background-color: #f8f7f4;
   border-radius: 15px;
   box-sizing: border-box;
@@ -810,14 +805,11 @@ a {
   font-weight: normal;
   /*margin-top: 2px;
     margin-bottom: 2px;*/
-  padding: 10px;
+  padding:10px 20px;
 }
 
 .subscribe-cover p {
-}
-
-.subscribe-cover .content {
-  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .subscribe input {
@@ -826,17 +818,22 @@ a {
   padding-left: 10px;
   border-radius: 4px;
   color: #999999;
+  border: 1px solid #999999;
 }
 
 .subscribe .button {
-  padding: 10px 15px;
+  padding: 10px 16px;
 }
-
+.content-cover{
+  display: flex;
+  margin-bottom: 20px;
+}
 .content {
   display: flex;
   width: 100%;
+  box-sizing: border-box;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   align-items: center;
   /*border: 2px solid red;*/
 }
@@ -897,7 +894,6 @@ a {
 .main-footer {
   display: flex;
   justify-content: center;
-  height: 100px;
   /*
   border-top: 1px solid rgba(255,255,255,0.5);
   */
@@ -920,6 +916,7 @@ a {
   padding: 0;
   box-sizing: border-box;
   margin-left: -10px;
+  margin-top: -10px;
   /*border: 2px solid red;*/
 }
 
@@ -955,11 +952,12 @@ a {
 
 /* КОЛОНКИ ССЫЛОК В ФУТЕРЕ */
 .footer-info {
-  width: 360px;
+  width: 380px;
   display: flex;
   flex-direction: row;
   align-items: center;
   box-sizing: border-box;
+  margin-left: -7px;
 }
 
 .footer-info ul {
@@ -968,7 +966,9 @@ a {
   flex-direction: column;
   margin: 0;
 }
-
+.footer-info li{
+  margin-bottom: 5px;
+}
 .footer-info a {
   color: white;
   text-decoration: none;
@@ -1118,6 +1118,7 @@ a {
 
 .filter-element {
   margin-right: 15px;
+  margin-bottom: 14px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1173,16 +1174,16 @@ a {
 }
 
 .filter-element .range {
-  width: 175px;
+  width: 180px;
 }
 
-.filter-element .input-sort-by {
-  width: 175px;
+.filter-element .list-sort-by {
+  width: 195px;
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
   border-radius: 20px;
   color: white;
-  padding: 8px 15px;
+  padding: 8px 12px;
   padding-right: 5px;
 }
 
@@ -1198,7 +1199,12 @@ a {
 
 .filter-option {
   padding-left: 30px;
+  padding-right: 24px;
+}
+
+.filter-option-radio {
   padding-right: 20px;
+  padding-left: 28px;
 }
 
 .filter-option label {
@@ -1238,11 +1244,11 @@ a {
   background: url("../img/radio-off.svg") no-repeat;
   background-size: cover;
   position: absolute;
-  left: -35px;
+  left: -32px;
   top: -3px;
 
-  width: 23px;
-  height: 23px;
+  width: 21px;
+  height: 21px;
 
   border-radius: 50%;
 }
@@ -1252,11 +1258,11 @@ a {
   background: url("../img/radio-on.svg") no-repeat;
   background-size: cover;
   position: absolute;
-  left: -35px;
+  left: -32px;
   top: -3px;
 
-  width: 23px;
-  height: 23px;
+  width: 21px;
+  height: 21px;
   border-radius: 50%;
 }
 
@@ -1268,8 +1274,9 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   color: white;
-  padding: 8px 20px;
+  padding: 7px 20px;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 .filter-button:hover {
@@ -1387,8 +1394,7 @@ a {
 .pagination-list-wrap {
   display: flex;
   justify-content: flex-end;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .pagination-list {
@@ -1402,9 +1408,11 @@ a {
 }
 
 .pagination-item {
-  margin-right: 5px;
+  margin-right: 2px;
   position: relative;
-  /*border: 1px solid red;*/
+  /*
+  border: 1px solid red;
+  */
 }
 
 .pagination-item:last-child {
@@ -1413,15 +1421,13 @@ a {
 
 .pagination-item a {
   display: inline-block;
-  min-width: 20px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
+  min-width: 25px;
+  height: 25px;
   vertical-align: middle;
+  text-align: center;
   font-weight: bold;
   text-decoration: none;
   color: white;
-  padding: 0 10px;
   border-radius: 50%;
 }
 
@@ -1451,15 +1457,17 @@ a {
   pointer-events: none;
   cursor: default;
   opacity: 0.5;
-
 }
+
 .pagination-list .prev {
+  margin-right: 5px;
   font-size: 0;
   transform: rotate(180deg);
-background: url("../img/pagin-arrow.svg") no-repeat center;
+  background: url("../img/pagin-arrow.svg") no-repeat center;
 }
 
 .pagination-list .next {
+  margin-left: 5px;
   font-size: 0;
   background: url("../img/pagin-arrow.svg") no-repeat center;
 }
