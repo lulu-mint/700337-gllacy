@@ -141,10 +141,24 @@
         </select>
       </div>
 
-      <div class="filter-element">
-        <label class="filter-label" for="range-cost">Цена:</label>
-        <div class="input-range"><input class="range" type="range" name="cost" id="range-cost"></div>
+      <div class="filter-element range">
+
+        <label class="filter-label">Цена:
+        <label class="visually-hidden" for="min-price">от</label>
+        <input type="text" name="min-price" value="100" id="min-price"> руб. -
+        <label class="visually-hidden" for="max-price">до</label>
+        <input type="text" name="max-price" value="500" id="max-price">руб.
+        </label>
+        <!--<div class="input-range"><input class="range" type="range" name="cost" id="range-cost"></div>-->
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+        </div>
       </div>
+
 
       <div class="filter-element">
         <label class="filter-label">Жирность:</label>
@@ -216,6 +230,7 @@
       <button class="filter-button" type="submit">Применить</button>
     </form>
   </section>
+
 
 
   <section class="catalog">
