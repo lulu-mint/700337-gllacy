@@ -1,56 +1,48 @@
-var link = document.querySelector(".login-link");
-var popup1 = document.querySelector(".modal-login");
-var close = popup1.querySelector(".modal-close");
+var feedback = document.querySelector(".feedback-button");
+var popup = document.querySelector(".modal-feedback");
+var close = popup.querySelector(".modal-close");
+var overlay = document.querySelector(".modal-overlay");
 
-var form = popup1.querySelector("form");
-var login = popup1.querySelector(".login-user");
-var password = popup1.querySelector(".login-password");
+var form = popup.querySelector("form");
+var name = popup.querySelector(".user-name");
+var mail = popup.querySelector(".user-email");
+var text = popup.querySelector(".user-request");
 
-var isStorageSupport = true;
-var storage = "";
-
-try {
-  storage = localStorage.getItem("login");
-} catch (err) {
-  isStorageSupport = false;
-}
-
-link.addEventListener("click", function (evt) {
+feedback.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup1.classList.toggle("visually-hidden");
-
-  if (storage) {
-    login.value = storage;
-    password.focus();
-  } else {
-    login.focus();
-  }
+  popup.classList.remove("visually-hidden");
+  overlay.classList.remove("visually-hidden");
 });
 
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup1.classList.add("visually-hidden");
-  popup1.classList.remove("modal-error");
+  popup.classList.add("visually-hidden");
+  popup.classList.remove("modal-error");
+  overlay.classList.add("visually-hidden");
+});
+
+overlay.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.add("visually-hidden");
+  popup.classList.remove("modal-error");
+  overlay.classList.add("visually-hidden");
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!login.value || !password.value) {
+  if (!name.value || !mail.value||!text.value) {
     evt.preventDefault();
-    popup1.classList.remove("modal-error");
-    popup1.offsetWidth = popup1.offsetWidth;
-    popup1.classList.add("modal-error");
-  } else {
-    if (isStorageSupport) {
-      localStorage.setItem("login", login.value);
-    }
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
   }
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    popup1.classList.add("visually-hidden");
-    popup1.classList.remove("modal-error");
+    popup.classList.add("visually-hidden");
+    popup.classList.remove("modal-error");
+    overlay.classList.add("visually-hidden");
   }
 });
 
