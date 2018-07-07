@@ -204,7 +204,7 @@ a {
   height: 85px;
   display: flex;
   align-items: center;
-
+  margin-right: 13px;
   /*
   border: 2px solid red;
   */
@@ -275,7 +275,7 @@ a {
 }
 
 .site-navigation li {
-  margin-left: 12px;
+  margin-right: 5px;
 }
 
 .site-navigation a {
@@ -289,7 +289,7 @@ a {
   display: flex;
   align-items: center;
   border-radius: 15px;
-  padding: 6px 12px;
+  padding: 7px 12px;
 }
 
 .site-navigation a:hover {
@@ -306,6 +306,7 @@ a {
 
 .site-navigation .main-navigation-current {
   background-color: #d07058;
+  text-decoration: none;
 }
 
 .site-navigation,
@@ -1044,7 +1045,8 @@ a {
 .page-title {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  margin-left: 2px;
 
   font-size: 35px;
   line-height: 41px;
@@ -1059,8 +1061,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0;
-  margin-bottom: 6px;
+  margin: 6px 0;
 
   font-size: 14px;
   line-height: 16px;
@@ -1083,7 +1084,7 @@ a {
 .breadcrumbs li {
   position: relative;
 
-  margin-right: 20px;
+  margin-right: 22px;
 }
 
 .breadcrumbs li::after {
@@ -1093,7 +1094,7 @@ a {
 
   width: 8px;
   height: 8px;
-  right: -14px;
+  right: -16px;
 }
 
 .breadcrumbs li:last-child {
@@ -1308,33 +1309,43 @@ a {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-top: 80px;
+  margin-top: 72px;
 }
+.catalog-item {
+  position: relative;
+  width: 275px;
+  margin-left: 17px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 65px;
+  margin-top: -60px;
+}
+.catalog-item a {
+  display: flex;
+  flex-direction: column;
 
-.catalog-list a {
   color: white;
   text-align: center;
 }
 
-.catalog-list h3 {
+.catalog-item h3 {
+  order: 1;
+  padding: 0;
+  margin-top: -6px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  margin-left: 10px;
+  margin-right: 10px;
+
   font-size: 16px;
   line-height: 22px;
+  font-weight: normal;
 }
 
 .catalog-list img {
-  width: 95%;
+  width: 265px;
   height: auto;
   border-radius: 50%;
-}
-
-.catalog-item {
-  position: relative;
-  width: 275px;
-  margin-left: 16px;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 60px;
-  margin-top: -60px;
 }
 
 .catalog-item:hover {
@@ -1357,58 +1368,38 @@ a {
   display: block;
 }
 
-.catalog-item a {
-  display: flex;
-  flex-direction: column;
-
-  color: white;
-}
-
-.catalog-item h3 {
-  order: 1;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 20px;
-  text-decoration: underline;
-  margin-left: 6px;
-  margin-right: 6px;
-
-  font-size: 16px;
-  line-height: 22px;
-
-}
-
 .catalog-item-price {
   position: absolute;
-  top: 175px;
-  left: 10px;
+  top: 177px;
+  left: 5px;
 
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
+.catalog-item-price span{
+  font-size: 30px;
+}
 /*ПАГИНАЦИЯ*/
 
 .pagination-list-wrap {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .pagination-list {
-  display: flex;
-  flex-wrap: wrap;
-
   padding: 0;
   margin: 0;
-
+  margin-right: -8px;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
 .pagination-item {
-  margin-right: 2px;
+  margin-right: 5px;
   position: relative;
   /*
   border: 1px solid red;
@@ -1421,13 +1412,15 @@ a {
 
 .pagination-item a {
   display: inline-block;
-  min-width: 25px;
+  min-width: 10px;
   height: 25px;
-  vertical-align: middle;
+  line-height: 25px;
   text-align: center;
+  vertical-align: middle;
   font-weight: bold;
   text-decoration: none;
   color: white;
+  padding: 0 7px;
   border-radius: 50%;
 }
 
