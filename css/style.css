@@ -324,7 +324,7 @@ a {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  max-width: 265px;
+  max-width: 280px;
   flex-wrap: wrap;
   /*border: 2px solid red;*/
 }
@@ -347,7 +347,7 @@ a {
 /* Подменю самого Дьявола! */
 .sub-menu {
   position: absolute;
-  top: 30px;
+  top: 33px;
   left: 0;
   z-index: 1;
   display: none;
@@ -477,17 +477,19 @@ a {
 }
 
 .modal-login {
-
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  top: 33px;
+  top: 34px;
   right: 0;
 
   width: 280px;
   padding: 20px;
 }
-
+.modal-login .button{
+  width: 100px;
+  box-sizing: border-box;
+}
 .login-link:hover ~ .modal-login {
   display: flex;
 }
@@ -536,7 +538,7 @@ input:focus::placeholder {
 }
 
 .modal-search-on-site {
-  top: 33px;
+  top: 34px;
   right: 0;
   width: 340px;
   padding: 20px 15px;
@@ -545,7 +547,9 @@ input:focus::placeholder {
 .modal-search-on-site input {
   margin-bottom: 0;
 }
-
+.search-button{
+  padding: 8px;
+}
 .search-button:hover ~ .modal-search-on-site {
   display: flex;
 }
@@ -737,6 +741,8 @@ input:focus::placeholder {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  min-height: 230px;
+
 }
 
 .extra-chocolate {
@@ -749,6 +755,7 @@ input:focus::placeholder {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  min-height: 230px;
 }
 
 .extra-promotion h3 {
@@ -792,7 +799,7 @@ input:focus::placeholder {
   background-color: #eaddbf;
   background-image: url("../img/vafle.jpg");
   color: #323232;
-  padding: 25px 20px 7px;
+  padding: 25px 20px 10px;
   box-sizing: border-box;
 }
 
@@ -962,10 +969,12 @@ input:focus::placeholder {
   width: 105%;
   min-height: 430px;
   margin-left: -25px;
+  border: 1px solid red;
 }
 
 .address p {
   margin: 0;
+  padding-top: 0;
   color: #323232;
   font-size: 14px;
   line-height: 20px;
@@ -975,7 +984,6 @@ input:focus::placeholder {
 .address strong {
   font-size: 18px;
   line-height: 24px;
-  cursor: pointer;
 }
 
 .info-address {
@@ -984,29 +992,32 @@ input:focus::placeholder {
   background-color: #fefefe;
   color: black;
   width: 305px;
-  min-height: 300px;
-  padding: 27px 25px;
+  min-height: 305px;
+  padding: 30px 25px 70px;
   box-sizing: border-box;
   border-radius: 15px;
   margin-right: 30px;
   display: flex;
   flex-direction: column;
   align-self: center;
+  position: relative;
 }
 
 .info-address .button {
-  width: 100%;
+  width: 250px;
   margin: 0;
+  position: absolute;
+  bottom: 30px;
 }
+.info-address strong{
 
+}
 /* ФУТЕР!!! */
 
 .main-footer {
   display: flex;
   justify-content: center;
-  /*
   border-top: 1px solid rgba(255,255,255,0.5);
-  */
 }
 
 .main-footer .content {
@@ -1090,7 +1101,10 @@ input:focus::placeholder {
   line-height: 16px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-
+.footer-info a:hover,
+.footer-info a:active{
+  color: #ffbc9e;
+}
 .footer-info-special {
   position: relative;
 }
@@ -1104,7 +1118,6 @@ input:focus::placeholder {
 
   width: 23px;
   height: 23px;
-
 }
 
 /* КОПИРАЙТЫ Ы-Ы-Ы-Ы-Ы :В  */
@@ -1145,7 +1158,10 @@ input:focus::placeholder {
   color: whitesmoke;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-
+.footer-copyright a:hover,
+.footer-copyright a:active{
+  color: #ffbc9e;
+}
 /* РАЗМЕТКА КАТАЛОГА!!!
     ( ╯°□°)╯┻┻
                       */
@@ -1522,7 +1538,7 @@ RANGE-BAR
   text-align: center;
   margin-top: -60px;
   padding: 0;
-  padding-bottom: 60px;
+  padding-bottom: 61px;
 }
 
 .hits .catalog-item:before {
@@ -1549,13 +1565,13 @@ RANGE-BAR
 }
 
 .catalog-item h3 {
-  order: 1;
+  /*order: 1;*/
   padding: 0;
   margin-top: -6px;
   margin-bottom: 20px;
   text-decoration: underline;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-left: 3%;
+  margin-right: 3%;
   position: relative;
 
   font-size: 16px;
@@ -1564,7 +1580,7 @@ RANGE-BAR
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.catalog-item a:hover > h3 {
+.catalog-item h3:hover {
   color: #ffbc9e;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -1605,7 +1621,7 @@ RANGE-BAR
 
 .catalog-item-price {
   position: absolute;
-  bottom: 18px;
+  bottom: 10px;
   left: 3px;
 
   font-size: 45px;
@@ -1624,6 +1640,7 @@ RANGE-BAR
   display: flex;
   justify-content: flex-end;
   margin-bottom: 30px;
+  margin-right: 3px;
 }
 
 .pagination-list {
