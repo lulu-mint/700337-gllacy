@@ -405,8 +405,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-
- top: 90%;
+  top: 90%;
 }
 
 .header-phone-number p {
@@ -688,7 +687,7 @@ input:focus::placeholder {
   z-index: 2;
 }
 
-.modal-map {
+/*.modal-map {
   top: 50%;
   left: 50%;
 
@@ -716,9 +715,9 @@ input:focus::placeholder {
 .modal-map iframe {
   position: relative;
   z-index: 2;
-
   border: none;
-}
+}*/
+
 
 /*
 Раздел экстра добавок
@@ -966,21 +965,24 @@ input:focus::placeholder {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  width: 105%;
-  min-height: 430px;
+  width: 105%;/*
+  min-height: 430px;*/
   margin-left: -25px;
-  border: 1px solid red;
 }
 
 .address p {
   margin: 0;
-  padding-top: 0;
+  padding: 0;
   color: #323232;
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 22px;
 }
-
+.address span{
+  margin-top: -15px;
+  font-size: 14px;
+  line-height: 20px;
+}
 .address strong {
   font-size: 18px;
   line-height: 24px;
@@ -991,12 +993,12 @@ input:focus::placeholder {
   margin-bottom: 5%;
   background-color: #fefefe;
   color: black;
-  width: 305px;
-  min-height: 305px;
-  padding: 30px 25px 70px;
+  width: 305px;/*
+  min-height: 305px;*/
+  padding: 30px 25px 100px;
   box-sizing: border-box;
   border-radius: 15px;
-  margin-right: 30px;
+  margin-right: 32px;
   display: flex;
   flex-direction: column;
   align-self: center;

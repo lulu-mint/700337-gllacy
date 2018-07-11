@@ -18,12 +18,16 @@
 
     <header>
       <nav class="main-navigation">
-
+        <div class="header-phone-number">
+          <p>С 10 до 20, ежедневно</p>
+          <p><strong>8 812 450-25-25</strong></p>
+        </div>
         <a class="main-header-logo disabled">
           <img src="img/logo.svg" alt="Логотип GlacyShop">
           <span class="visually-hidden">Главная</span></a>
 
         <div class="nav-container">
+
           <ul class="site-navigation">
             <li><a href="#">Каталог</a>
               <ul class="sub-menu">
@@ -106,7 +110,9 @@
               </a>
 
               <form class="modal modal-cart">
-                <div class="modal-cart-items"></div>
+                <div class="modal-cart-items">
+                  <p>Корзина пуста. Добавьте что-то :)</p>
+                </div>
                 <p class="modal-cart-cost">Итого: </p>
                 <button class="button" type="submit">Оформить заказ</button>
               </form>
@@ -114,10 +120,7 @@
           </div>
         </div>
 
-        <div class="header-phone-number">
-          <p>С 10 до 20, ежедневно</p>
-          <p><strong>8 812 450-25-25</strong></p>
-        </div>
+
       </nav>
     </header>
 
@@ -178,7 +181,7 @@
           <li class="catalog-item">
             <a href="#">
               <p class="catalog-item-image">
-                <img src="img/icecream1.jpg" width="260" height="260"
+                <img src="img/icecream1.jpg" width="200" height="200"
                      alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               <span class="catalog-item-price">310 ₽<span>/кг</span></span>
               </p><h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
@@ -189,7 +192,8 @@
           <li class="catalog-item">
             <a href="#">
               <p class="catalog-item-image">
-                <img src="img/icecream2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+                <img src="img/icecream2.jpg" width="200" height="200"
+                     alt="Сливочно-кофейное с кусочками шоколада">
               <span class="catalog-item-price">380 ₽<span>/кг</span></span>
               </p><h3>Сливочно-кофейное с кусочками шоколада</h3>
             </a>
@@ -200,7 +204,8 @@
           <li class="catalog-item">
             <a href="#">
               <p class="catalog-item-image">
-                <img src="img/icecream3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <img src="img/icecream3.jpg" width="200" height="200"
+                     alt="Сливочно-клубничное с присыпкой из белого шоколада">
               <span class="catalog-item-price">355 ₽<span>/кг</span></span>
               </p><h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
             </a>
@@ -210,7 +215,8 @@
           <li class="catalog-item">
             <a href="#">
               <p class="catalog-item-image">
-                <img src="img/icecream4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+                <img src="img/icecream4.jpg" width="200" height="200"
+                     alt="Сливочное крем-брюле с карамельной подливкой">
               <span class="catalog-item-price">415 ₽<span>/кг</span></span>
               </p><h3>Сливочное крем-брюле с карамельной подливкой</h3>
             </a>
@@ -282,9 +288,9 @@
           <p>Адрес главного офиса<br><!-- просто потому что -->
             и офлайн-магазина:<br>
             <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong></p>
-          <p>Для заказов по телефону:<br>
-            <strong>8 812 450-25-25</strong><br>
-            (с 10 до 20 ежедневно)</p>
+          <p>Для заказов по телефону:<br></p>
+            <span><strong>8 812 450-25-25</strong><br>
+            (с 10 до 20 ежедневно)</span>
           <button class="button feedback-button" type="button">Форма обратной связи</button>
         </div>
 
@@ -313,13 +319,13 @@
       <div class="content">
 
         <ul class="footer-social">
-          <li><a class="social-button" href=""><img src="img/twitter.svg" width="35" height="35" alt="Twitter">
+          <li><a class="social-button" href="#"><img src="img/twitter.svg" width="35" height="35" alt="Twitter">
             <span class="visually-hidden">Твиттер</span></a></li>
-          <li><a class="social-button" href=""><img src="img/instagram.svg" width="35" height="35" alt="Instagram">
+          <li><a class="social-button" href="#"><img src="img/instagram.svg" width="35" height="35" alt="Instagram">
             <span class="visually-hidden">Инстаграм</span></a></li>
-          <li><a class="social-button" href=""><img src="img/fb.svg" width="35" height="35" alt="Facebook">
+          <li><a class="social-button" href="#"><img src="img/fb.svg" width="35" height="35" alt="Facebook">
             <span class="visually-hidden">Фэйсбук</span></a></li>
-          <li><a class="social-button" href=""><img src="img/VK.svg" width="35" height="35" alt="VK">
+          <li><a class="social-button" href="#"><img src="img/VK.svg" width="35" height="35" alt="VK">
             <span class="visually-hidden">ВКонтакте</span></a></li>
         </ul>
 
