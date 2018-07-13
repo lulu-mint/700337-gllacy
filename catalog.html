@@ -23,6 +23,7 @@
       <div class="nav-container">
         <ul class="site-navigation">
           <li><a class="main-navigation-current" href="#">Каталог</a>
+            <div class="sub-menu-wrapper">
             <ul class="sub-menu">
               <li><a class="special-link" href="#">Новинки</a></li>
               <li><a class="site-navigation-current disabled" href="catalog.html">Сливочные</a></li>
@@ -30,6 +31,7 @@
               <li><a href="#">Фруктовый лёд</a></li>
               <li><a href="#">Мелорин</a></li>
             </ul>
+            </div>
           </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
@@ -104,9 +106,22 @@
 
             <form class="modal modal-cart">
               <div class="modal-cart-items">
-                <p>Корзина пуста. Добавьте что-то :)</p>
+                <table class="cart-table">
+                  <tr>
+                    <th><img src="img/icecream1.jpg" width="34" height="34" alt="апельсиновый пломбир"></th>
+                    <td>Пломбир с апельсиновым джемом</td>
+                    <td>1,5 кг x <span>200 руб.</span></td>
+                    <td>300 руб.</td>
+                  </tr>
+                  <tr>
+                    <th><img src="img/icecream3.jpg" width="34" height="34" alt="клубничный пломбир"></th>
+                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td>1,5 кг x <span>300 руб.</span></td>
+                    <td>450 руб.</td>
+                  </tr>
+                </table>
               </div>
-              <p class="modal-cart-cost">Итого: </p>
+              <p class="modal-cart-cost">Итого: 750 руб.</p>
               <button class="button" type="submit">Оформить заказ</button>
             </form>
           </div>
