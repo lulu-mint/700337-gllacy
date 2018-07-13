@@ -37,9 +37,9 @@
           <li><a href="#">О Компании</a></li>
         </ul>
 
-        <div class="user-navigation">
+        <ul class="user-navigation">
 
-          <div class="search-on-site">
+          <li class="search-on-site">
             <button class="menu-button search-button" type="button">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17"
                    height="17"
@@ -49,14 +49,16 @@
               <span class="visually-hidden">Поиск по сайту</span>
             </button>
 
+            <div class="search-form-wrapper">
             <form class="modal modal-search-on-site">
               <label class="visually-hidden" for="search-on-site">Ваше имя</label>
               <input id="search-on-site" type="text" name="search" placeholder="Что ищем?">
             </form>
-          </div>
+            </div>
+          </li>
 
 
-          <div class="login">
+          <li class="login">
             <a class="menu-button login-link" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21"
                    height="19"
@@ -71,6 +73,7 @@
               <span>Вход</span>
             </a>
 
+            <div class="login-form-wrapper">
             <form class="modal modal-login" method="get" action="https://echo.htmlacademy.ru">
               <label class="visually-hidden"
                      for="user-login">Электронная почта</label>
@@ -87,14 +90,15 @@
                 <a href="#">Новая регистрация</a>
               </div>
             </form>
-          </div>
+            </div>
+          </li>
 
 
-          <div class="cart-navigation">
+          <li class="cart-navigation">
             <a class="menu-button cart-link" href="#">
               <span>2 товара</span>
             </a>
-
+            <div class="cart-form-wrapper">
             <form class="modal modal-cart">
               <div class="modal-cart-items">
                 <table class="cart-table">
@@ -115,8 +119,9 @@
               <p class="modal-cart-cost">Итого: 750 руб.</p>
               <button class="button" type="submit">Оформить заказ</button>
             </form>
-          </div>
-        </div>
+            </div>
+          </li>
+        </ul>
       </div>
 
     </nav>
