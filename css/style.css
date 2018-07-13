@@ -1107,7 +1107,7 @@ a {
   width: 250px;
   margin: 0;
   position: absolute;
-  bottom: 30px;
+  bottom: 35px;
 }
 .info-address strong{
 
@@ -1423,14 +1423,14 @@ a {
   display: none;
 }
 .select-arrow {
-  background-image: url(../img/icon-down-dir-white.svg);
+  background-image: url(../img/icon-down-white.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
   display: block;
   height: 20px;
-  left: 165px;
+  left: 170px;
   pointer-events: none;
   position: absolute;
   top: 28px;
