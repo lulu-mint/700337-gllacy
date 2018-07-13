@@ -46,9 +46,9 @@
             <li><a href="#">О Компании</a></li>
           </ul>
 
-          <ul class="user-navigation">
+          <div class="user-navigation">
 
-            <li class="search-on-site">
+            <div class="search-on-site">
               <button class="menu-button search-button" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17"
                      height="17"
@@ -67,10 +67,10 @@
               </form>
 
 
-            </li>
+            </div>
 
 
-            <li class="login login-link">
+            <div class="login">
               <a class="menu-button login-link" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21"
                      height="19"
@@ -84,7 +84,6 @@
                 <span>Вход</span>
               </a>
 
-              <div class="login-form-wrapper">
               <form class="modal modal-login" action="https://echo.htmlacademy.ru" method="get">
                 <label class="visually-hidden"
                        for="user-login">Электронная почта</label>
@@ -102,10 +101,9 @@
                 </div>
               </form>
             </div>
-            </li>
 
 
-            <li class="cart-navigation">
+            <div class="cart-navigation">
               <a class="menu-button cart-link" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
                   <g fill="#FFF">
@@ -126,8 +124,8 @@
                 <p class="modal-cart-cost">Итого: </p>
                 <button class="button" type="submit">Оформить заказ</button>
               </form>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
 
 
@@ -260,7 +258,7 @@
 
           <li>
             <img src="img/thermometer.svg" width="50" height="50" alt="Термометр">
-            <p>Доставка нашего магазина до заказчиков осуществояеися в специальном термопаке,
+            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
               который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>
@@ -295,12 +293,12 @@
 
         <div class="info-address">
           <h2 class="visually-hidden">Адрес магазина Глэйси</h2>
-          <p>Адрес главного офиса<br><!-- просто потому что -->
-            и офлайн-магазина:<br>
-            <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong></p>
-          <p>Для заказов по телефону:<br></p>
-            <span><strong>8 812 450-25-25</strong><br>
-            (с 10 до 20 ежедневно)</span>
+          <p>Адрес главного офиса<br><!--зачем усложнять жизнь? на лекциях разрешили использовать бр для оформления адреса!-->
+            и офлайн-магазина:</p>
+            <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
+          <p>Для заказов по телефону:</p>
+            <strong>8 812 450-25-25</strong>
+          <span>(с 10 до 20 ежедневно)</span>
           <button class="button feedback-button" type="button">Форма обратной связи</button>
         </div>
 
